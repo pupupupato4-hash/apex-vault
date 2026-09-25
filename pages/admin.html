@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="th"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Outfit:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary-fixed-variant": "#6a0baa", "on-surface": "#e1e2eb", "tertiary-fixed-dim": "#ffba27", "primary-fixed-dim": "#00dbe9", "on-background": "#e1e2eb", "primary-container": "#00f0ff", "on-primary-container": "#006970", "surface": "#10131a", "secondary-container": "#6d11ad", "on-primary-fixed": "#002022", "on-primary-fixed-variant": "#004f54", "surface-container-high": "#272a31", "on-secondary-container": "#d7a4ff", "on-tertiary-container": "#7d5800", "error": "#ffb4ab", "surface-variant": "#32353c", "on-tertiary-fixed": "#271900", "secondary-fixed": "#f2daff", "background": "#10131a", "surface-container-low": "#191c22", "tertiary": "#fff4e8", "surface-container-highest": "#32353c", "inverse-on-surface": "#2e3037", "on-surface-variant": "#b9cacb", "on-error": "#690005", "surface-tint": "#00dbe9", "on-tertiary": "#422c00", "primary": "#dbfcff", "surface-container": "#1d2026", "tertiary-fixed": "#ffdea9", "outline": "#849495", "inverse-surface": "#e1e2eb", "on-secondary": "#4c007d", "surface-dim": "#10131a", "on-secondary-fixed": "#2e004e", "error-container": "#93000a", "on-tertiary-fixed-variant": "#5e4100", "surface-bright": "#363940", "inverse-primary": "#006970", "outline-variant": "#3b494b", "surface-container-lowest": "#0b0e14", "on-error-container": "#ffdad6", "on-primary": "#00363a", "primary-fixed": "#7df4ff", "tertiary-container": "#ffd388", "secondary": "#e0b6ff", "secondary-fixed-dim": "#e0b6ff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin": "2rem", "gutter": "1.5rem", "space-lg": "1.5rem", "space-xl": "2.5rem", "margin-mobile": "1rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "space-md": "1rem", "gutter-mobile": "1rem" }, "fontFamily": { "display-hero": [ "Outfit" ], "display-hero-mobile": [ "Outfit" ], "headline-md": [ "Outfit" ], "label-sm": [ "Outfit" ], "headline-xl-mobile": [ "Outfit" ], "headline-xl": [ "Outfit" ], "body-md": [ "Inter" ], "label-lg": [ "Outfit" ], "label-md": [ "Outfit" ], "body-lg": [ "Inter" ], "headline-lg": [ "Outfit" ], "body-sm": [ "Inter" ], "headline-sm": [ "Outfit" ] }, "fontSize": { "display-hero": [ "56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "800" } ], "display-hero-mobile": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "800" } ], "headline-md": [ "22px", { "lineHeight": "30px", "fontWeight": "600" } ], "label-sm": [ "10px", { "lineHeight": "14px", "letterSpacing": "0.1em", "fontWeight": "700" } ], "headline-xl-mobile": [ "28px", { "lineHeight": "36px", "fontWeight": "700" } ], "headline-xl": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "body-md": [ "14px", { "lineHeight": "22px", "fontWeight": "400" } ], "label-lg": [ "14px", { "lineHeight": "18px", "letterSpacing": "0.06em", "fontWeight": "700" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "700" } ], "body-lg": [ "16px", { "lineHeight": "26px", "fontWeight": "400" } ], "headline-lg": [ "28px", { "lineHeight": "36px", "fontWeight": "600" } ], "body-sm": [ "12px", { "lineHeight": "18px", "fontWeight": "400" } ], "headline-sm": [ "18px", { "lineHeight": "26px", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest z-50 flex flex-col pt-space-lg pb-space-lg shadow-[4px_0_24px_rgba(0,0,0,0.5)]"><div class="px-space-lg mb-space-lg flex items-center gap-space-xs"><img alt="APEX VAULT Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WVKZp6i3ngQxF5P1iisxrS3aA7jWDvtwT7fNDm3vSCzAoNXgKz4VuKT88vMq36elrtIrk1lWXRuGC9xNResALgg5IOHhxhzG2CzzlQKB64R41hJV529s-2hV-A84sh-EHqvW-f4rN7N9Q_iABWYD20EG7szYCjY-c3U0ehAyl-rTxFNJ6dF5zR80qs49UI62d9mx4iKVeLOsamOJl2H-_ryY86GJ-yR4Y5PiuiLDliWvejymxR_i5CZr0"/><span class="font-headline-sm text-headline-sm uppercase tracking-wider text-primary">VAULT<span class="text-secondary ml-1">ADMIN</span></span></div><div class="px-space-md mb-space-sm"><span class="font-label-sm text-label-sm uppercase tracking-widest text-outline px-space-sm">Operations</span></div><nav class="flex-1 px-space-sm flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container font-headline-sm font-bold rounded-lg"><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm transition-all bg-primary-container text-on-primary-container font-headline-sm font-bold rounded-lg" data-path="admin-console" href="#"><span class="material-symbols-outlined text-[20px]">space_dashboard</span>ภาพรวมระบบ</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all font-body-md text-body-md" data-path="inventory-management" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span>คลังไอดีเกม</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all font-body-md text-body-md" data-path="gacha-odds-engine" href="#"><span class="material-symbols-outlined text-[20px]">casino</span>ตู้สุ่ม &amp; อัตราดรอป</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all font-body-md text-body-md" data-path="financial-ledger" href="#"><span class="material-symbols-outlined text-[20px]">account_balance</span>การเงิน &amp; ธุรกรรม</a><div class="my-space-sm px-space-sm"><span class="font-label-sm text-label-sm uppercase tracking-widest text-outline">User Portal</span></div><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all font-body-md text-body-md" data-path="home" href="#"><span class="material-symbols-outlined text-[20px]">storefront</span>กลับสู่หน้าร้าน</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all font-body-md text-body-md" data-path="user-dashboard" href="#"><span class="material-symbols-outlined text-[20px]">badge</span>แดชบอร์ดสมาชิก</a></nav><div class="px-space-md pt-space-sm"><div class="p-space-sm rounded-xl bg-surface-container-low flex items-center justify-between"><div class="flex items-center gap-space-xs"><div class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-headline-sm text-label-sm font-bold">AD</div><div><p class="font-headline-sm text-label-md text-on-surface">Admin Control</p><p class="font-label-sm text-label-sm text-secondary">Superuser</p></div></div><a aria-label="Sign out" class="text-on-surface-variant hover:text-error transition-colors" data-path="login" href="#"><span class="material-symbols-outlined text-[20px]">power_settings_new</span></a></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-20 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_4px_24px_rgba(0,0,0,0.6)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-primary-container text-[20px]">terminal</span><span class="font-headline-sm text-headline-sm text-primary tracking-wide">VAULT COMMAND ENGINE</span></div><div class="flex items-center gap-space-md"><div class="flex items-center bg-surface-container-low rounded-xl px-space-md py-1.5 shadow-[0_0_12px_-2px_rgba(0,240,255,0.2)]"><span class="material-symbols-outlined text-primary-container text-[18px] mr-2">bolt</span><span class="font-label-sm text-label-sm text-on-surface-variant mr-2">STATUS:</span><span class="font-label-sm text-label-sm text-primary-container uppercase font-bold">ONLINE</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-20 w-full px-space-lg py-space-lg min-h-screen bg-surface"><div class="flex flex-col w-full">
+<!-- System Diagnostic Sub-Bar -->
+<div class="flex flex-wrap items-center justify-between gap-space-md mb-space-lg bg-surface-container-low p-space-md rounded-xl shadow-lg">
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-space-xs px-space-sm py-1 bg-surface-container-highest rounded-lg">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-primary uppercase">SUPER ADMIN - ROOT ACCESS</span>
+</div>
+<div class="hidden sm:flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-primary-container">dns</span>
+<span>BANGKOK-01 // PING: <span class="text-primary font-bold">12ms</span></span>
+</div>
+<div class="hidden md:flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary-container">verified_user</span>
+<span>FIREWALL: <span class="text-on-surface">SYN-FLOOD PROTECTED</span></span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="relative">
+<span class="absolute inset-y-0 left-3 flex items-center pointer-events-none text-outline">
+<span class="material-symbols-outlined text-[18px]">search</span>
+</span>
+<input class="bg-surface-container-highest text-on-surface text-body-sm font-body-md pl-9 pr-space-md py-1.5 rounded-lg focus:outline-none focus:ring-0 placeholder:text-outline w-56 lg:w-72" placeholder="ค้นหาไอดี, UID, หรือเลขออเดอร์..." type="text"/>
+</div>
+<button class="relative bg-surface-container-highest hover:bg-surface-container-high text-on-surface p-2 rounded-lg transition-colors" title="Notifications">
+<span class="material-symbols-outlined text-[20px] text-tertiary-container">notifications</span>
+<span class="absolute -top-1 -right-1 flex h-4 w-4 items-center justify-center rounded-full bg-error text-on-error font-label-sm text-[9px] font-bold">3</span>
+</button>
+<button class="flex items-center gap-1 bg-primary-container hover:bg-primary-fixed text-on-primary-fixed px-space-md py-1.5 rounded-lg font-headline-sm text-label-md transition-all shadow-[0_0_16px_rgba(0,240,255,0.35)]" onclick="document.getElementById('modal-add-item').classList.remove('hidden')">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>+ เพิ่มไอดีใหม่</span>
+</button>
+</div>
+</div>
+<!-- Critical Banner for Pending Approvals -->
+<div class="flex items-center justify-between p-space-md mb-space-lg rounded-xl bg-surface-container shadow-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-tertiary-container/20 flex items-center justify-center text-tertiary-container">
+<span class="material-symbols-outlined text-[22px]">pending_actions</span>
+</div>
+<div>
+<p class="font-headline-sm text-headline-sm text-tertiary-container font-semibold">พบ 3 รายการเติมเงินรอตรวจสอบความถูกต้อง (TrueMoney Voucher)</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">ยอดเงินรวม ฿1,850.00 รอแอดมินกดอนุมัติเพื่อเติมเครดิตเข้ากระเป๋าสมาชิก</p>
+</div>
+</div>
+<button class="hidden sm:flex items-center gap-1 bg-surface-container-highest hover:bg-surface-bright text-tertiary-fixed font-headline-sm text-label-md px-space-md py-2 rounded-lg transition-all" onclick="switchTab('tab-audit')">
+<span>ไปที่แท็บอนุมัติ</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+<!-- Key Statistics KPI Grid (6 Bento Cells) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-space-md mb-space-xl">
+<!-- Card 1 -->
+<div class="bg-surface-container-low p-space-md rounded-xl shadow-lg relative overflow-hidden flex flex-col justify-between">
+<div class="flex justify-between items-start mb-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">ยอดขายวันนี้</span>
+<span class="text-primary-container bg-primary-container/10 px-1.5 py-0.5 rounded font-label-sm text-label-sm">+18.4%</span>
+</div>
+<div>
+<div class="font-headline-xl text-headline-lg font-bold text-on-surface tracking-tight">฿48,950</div>
+<p class="font-body-sm text-body-sm text-outline mt-1">vs ฿41,340 เมื่อวาน</p>
+</div>
+<div class="h-8 mt-2">
+<svg class="w-full h-full text-primary-container" preserveaspectratio="none" viewbox="0 0 100 30">
+<path d="M0 25 Q 25 15, 50 18 T 100 5 L 100 30 L 0 30 Z" fill="currentColor" fill-opacity="0.15"></path>
+<path d="M0 25 Q 25 15, 50 18 T 100 5" fill="none" stroke="currentColor" stroke-width="2"></path>
+</svg>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-low p-space-md rounded-xl shadow-lg relative overflow-hidden flex flex-col justify-between">
+<div class="flex justify-between items-start mb-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">รายได้รวมเดือนนี้</span>
+<span class="text-primary-container bg-primary-container/10 px-1.5 py-0.5 rounded font-label-sm text-label-sm">+24.1%</span>
+</div>
+<div>
+<div class="font-headline-xl text-headline-lg font-bold text-primary tracking-tight">฿1,248,300</div>
+<p class="font-body-sm text-body-sm text-outline mt-1">MoM Growth Rate</p>
+</div>
+<div class="h-8 mt-2">
+<svg class="w-full h-full text-secondary" preserveaspectratio="none" viewbox="0 0 100 30">
+<path d="M0 28 Q 30 20, 60 10 T 100 4 L 100 30 L 0 30 Z" fill="currentColor" fill-opacity="0.15"></path>
+<path d="M0 28 Q 30 20, 60 10 T 100 4" fill="none" stroke="currentColor" stroke-width="2"></path>
+</svg>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-low p-space-md rounded-xl shadow-lg relative overflow-hidden flex flex-col justify-between">
+<div class="flex justify-between items-start mb-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">คำสั่งซื้อทั้งหมด</span>
+<span class="text-primary-container bg-primary-container/10 px-1.5 py-0.5 rounded font-label-sm text-label-sm">99.2% สำเร็จ</span>
+</div>
+<div>
+<div class="font-headline-xl text-headline-lg font-bold text-on-surface tracking-tight">3,420</div>
+<p class="font-body-sm text-body-sm text-outline mt-1">ออเดอร์ในรอบ 30 วัน</p>
+</div>
+<div class="h-8 mt-2">
+<svg class="w-full h-full text-primary-container" preserveaspectratio="none" viewbox="0 0 100 30">
+<path d="M0 20 Q 30 25, 55 12 T 100 6 L 100 30 L 0 30 Z" fill="currentColor" fill-opacity="0.15"></path>
+<path d="M0 20 Q 30 25, 55 12 T 100 6" fill="none" stroke="currentColor" stroke-width="2"></path>
+</svg>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-low p-space-md rounded-xl shadow-lg relative overflow-hidden flex flex-col justify-between">
+<div class="flex justify-between items-start mb-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">กิจกรรมสุ่มกาชา</span>
+<span class="text-secondary bg-secondary-container/30 px-1.5 py-0.5 rounded font-label-sm text-label-sm">ยอดนิยม</span>
+</div>
+<div>
+<div class="font-headline-xl text-headline-lg font-bold text-secondary tracking-tight">18,920</div>
+<p class="font-body-sm text-body-sm text-outline mt-1">Rev: ฿946,000</p>
+</div>
+<div class="h-8 mt-2">
+<svg class="w-full h-full text-secondary" preserveaspectratio="none" viewbox="0 0 100 30">
+<path d="M0 15 Q 25 22, 60 8 T 100 2 L 100 30 L 0 30 Z" fill="currentColor" fill-opacity="0.15"></path>
+<path d="M0 15 Q 25 22, 60 8 T 100 2" fill="none" stroke="currentColor" stroke-width="2"></path>
+</svg>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="bg-surface-container-low p-space-md rounded-xl shadow-lg relative overflow-hidden flex flex-col justify-between">
+<div class="flex justify-between items-start mb-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">สมาชิกระบบ</span>
+<span class="text-primary-container bg-primary-container/10 px-1.5 py-0.5 rounded font-label-sm text-label-sm">+142 วันนี้</span>
+</div>
+<div>
+<div class="font-headline-xl text-headline-lg font-bold text-on-surface tracking-tight">42,850</div>
+<p class="font-body-sm text-body-sm text-outline mt-1">ผู้ใช้งานยืนยันอีเมล</p>
+</div>
+<div class="h-8 mt-2">
+<svg class="w-full h-full text-primary-container" preserveaspectratio="none" viewbox="0 0 100 30">
+<path d="M0 24 Q 40 18, 70 14 T 100 8 L 100 30 L 0 30 Z" fill="currentColor" fill-opacity="0.15"></path>
+<path d="M0 24 Q 40 18, 70 14 T 100 8" fill="none" stroke="currentColor" stroke-width="2"></path>
+</svg>
+</div>
+</div>
+<!-- Card 6 -->
+<div class="bg-surface-container-low p-space-md rounded-xl shadow-lg relative overflow-hidden flex flex-col justify-between">
+<div class="flex justify-between items-start mb-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Stock ในระบบ</span>
+<span class="text-error bg-error-container/40 px-1.5 py-0.5 rounded font-label-sm text-label-sm">เติม 4 หมวด</span>
+</div>
+<div>
+<div class="font-headline-xl text-headline-lg font-bold text-on-surface tracking-tight">582</div>
+<p class="font-body-sm text-body-sm text-outline mt-1">รหัสไอดีพร้อมส่ง</p>
+</div>
+<div class="h-8 mt-2">
+<div class="w-full bg-surface-container-highest rounded-full h-2 mt-3">
+<div class="bg-tertiary-container h-2 rounded-full" style="width: 68%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Visual Analytics & Chart Split Panel -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-xl">
+<!-- Area Chart: Revenue Trend -->
+<div class="lg:col-span-8 bg-surface-container-low p-space-lg rounded-xl shadow-xl flex flex-col justify-between">
+<div class="flex flex-wrap items-center justify-between gap-space-md mb-space-md">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary">TELEMETRY &amp; SALES MATRIX</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">แนวโน้มรายได้ &amp; ยอดขาย 14 วันย้อนหลัง</h2>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-highest p-1 rounded-lg">
+<button class="px-space-sm py-1 rounded font-label-sm text-label-sm bg-primary-container text-on-primary-container font-bold">14D</button>
+<button class="px-space-sm py-1 rounded font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface">30D</button>
+<button class="px-space-sm py-1 rounded font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface">90D</button>
+</div>
+</div>
+<!-- Area Chart SVG -->
+<div class="w-full h-64 relative flex items-end">
+<svg class="w-full h-full overflow-visible" preserveaspectratio="none" viewbox="0 0 700 240">
+<defs>
+<lineargradient id="cyanGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#00f0ff" stop-opacity="0.35"></stop>
+<stop offset="100%" stop-color="#00f0ff" stop-opacity="0"></stop>
+</lineargradient>
+<lineargradient id="purpleGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#e0b6ff" stop-opacity="0.25"></stop>
+<stop offset="100%" stop-color="#e0b6ff" stop-opacity="0"></stop>
+</lineargradient>
+</defs>
+<!-- Horizontal Grid Lines -->
+<line stroke="#32353c" stroke-dasharray="4 4" stroke-width="1" x1="0" x2="700" y1="20" y2="20"></line>
+<line stroke="#32353c" stroke-dasharray="4 4" stroke-width="1" x1="0" x2="700" y1="80" y2="80"></line>
+<line stroke="#32353c" stroke-dasharray="4 4" stroke-width="1" x1="0" x2="700" y1="140" y2="140"></line>
+<line stroke="#32353c" stroke-dasharray="4 4" stroke-width="1" x1="0" x2="700" y1="200" y2="200"></line>
+<!-- Marketplace Revenue (Purple) -->
+<path d="M 0 170 Q 100 190, 200 130 T 400 120 T 550 80 T 700 65 L 700 240 L 0 240 Z" fill="url(#purpleGrad)"></path>
+<path d="M 0 170 Q 100 190, 200 130 T 400 120 T 550 80 T 700 65" fill="none" stroke="#e0b6ff" stroke-width="2"></path>
+<!-- Gacha Revenue (Electric Cyan) -->
+<path d="M 0 130 Q 110 140, 210 90 T 420 70 T 580 40 T 700 20 L 700 240 L 0 240 Z" fill="url(#cyanGrad)"></path>
+<path d="M 0 130 Q 110 140, 210 90 T 420 70 T 580 40 T 700 20" fill="none" stroke="#00f0ff" stroke-width="3"></path>
+<!-- Glow Highlights -->
+<circle class="animate-ping" cx="700" cy="20" fill="#00f0ff" r="5"></circle>
+<circle cx="700" cy="20" fill="#00f0ff" r="4"></circle>
+</svg>
+</div>
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm mt-space-sm pt-2">
+<span>01 ต.ค.</span>
+<span>04 ต.ค.</span>
+<span>07 ต.ค.</span>
+<span>10 ต.ค.</span>
+<span>14 ต.ค. (วันนี้)</span>
+</div>
+<div class="flex items-center gap-space-lg mt-space-md pt-space-sm">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-primary-container"></span>
+<span class="font-body-sm text-body-sm text-on-surface">ตู้สุ่มกาชา (75.8%)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-secondary"></span>
+<span class="font-body-sm text-body-sm text-on-surface">ตลาดซื้อไอดีตรง (24.2%)</span>
+</div>
+</div>
+</div>
+<!-- Donut Breakdown / Source Attribution -->
+<div class="lg:col-span-4 bg-surface-container-low p-space-lg rounded-xl shadow-xl flex flex-col justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">REVENUE CHANNELS</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">สัดส่วนรายได้ตามแพลตฟอร์ม</h2>
+</div>
+<div class="flex items-center justify-center my-space-md">
+<div class="relative w-44 h-44 flex items-center justify-center">
+<svg class="w-full h-full -rotate-90" viewbox="0 0 100 100">
+<!-- Background Ring -->
+<circle cx="50" cy="50" fill="none" r="38" stroke="#1d2026" stroke-width="12"></circle>
+<!-- Gacha Ring (Cyan 75%) -->
+<circle cx="50" cy="50" fill="none" r="38" stroke="#00f0ff" stroke-dasharray="179 238" stroke-dashoffset="0" stroke-width="12"></circle>
+<!-- Direct ID Sale (Purple 20%) -->
+<circle cx="50" cy="50" fill="none" r="38" stroke="#6d11ad" stroke-dasharray="48 238" stroke-dashoffset="-179" stroke-width="12"></circle>
+<!-- Commission/Fees (Gold 5%) -->
+<circle cx="50" cy="50" fill="none" r="38" stroke="#ffd388" stroke-dasharray="12 238" stroke-dashoffset="-227" stroke-width="12"></circle>
+</svg>
+<div class="absolute flex flex-col items-center">
+<span class="font-headline-lg text-headline-md text-on-surface font-bold">฿1.24M</span>
+<span class="font-label-sm text-label-sm text-outline">รวมยอด 30D</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between bg-surface-container p-space-sm rounded-lg">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span class="font-body-sm text-body-sm text-on-surface">Gacha Boxes (Valorant / RoV)</span>
+</div>
+<span class="font-headline-sm text-label-md text-primary-container">฿946,000</span>
+</div>
+<div class="flex items-center justify-between bg-surface-container p-space-sm rounded-lg">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container"></span>
+<span class="font-body-sm text-body-sm text-on-surface">Verified Direct ID Sales</span>
+</div>
+<span class="font-headline-sm text-label-md text-secondary">฿249,600</span>
+</div>
+<div class="flex items-center justify-between bg-surface-container p-space-sm rounded-lg">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-container"></span>
+<span class="font-body-sm text-body-sm text-on-surface">Fee &amp; Top-up Processing</span>
+</div>
+<span class="font-headline-sm text-label-md text-tertiary-container">฿52,700</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Management Central Hub (Tabbed System) -->
+<div class="bg-surface-container-low rounded-xl shadow-2xl p-space-md lg:p-space-lg mb-space-xl">
+<!-- Tab Controls Navigation -->
+<div class="flex flex-wrap items-center gap-space-xs mb-space-lg bg-surface-container-lowest p-1.5 rounded-xl">
+<button class="tab-btn flex items-center gap-space-xs px-space-md py-2.5 rounded-lg font-headline-sm text-label-md bg-primary-container text-on-primary-container transition-all" id="btn-tab-inventory" onclick="switchTab('tab-inventory')">
+<span class="material-symbols-outlined text-[18px]">inventory_2</span>
+<span>คลังไอดีเกม &amp; สต็อก</span>
+<span class="ml-1 px-1.5 py-0.2 bg-on-primary-container/20 rounded font-label-sm text-label-sm">582</span>
+</button>
+<button class="tab-btn flex items-center gap-space-xs px-space-md py-2.5 rounded-lg font-headline-sm text-label-md text-on-surface-variant hover:text-on-surface transition-all" id="btn-tab-gacha" onclick="switchTab('tab-gacha')">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+<span>Gacha Probability Engine</span>
+<span class="ml-1 px-1.5 py-0.2 bg-secondary-container/40 text-secondary rounded font-label-sm text-label-sm">Live Engine</span>
+</button>
+<button class="tab-btn flex items-center gap-space-xs px-space-md py-2.5 rounded-lg font-headline-sm text-label-md text-on-surface-variant hover:text-on-surface transition-all" id="btn-tab-audit" onclick="switchTab('tab-audit')">
+<span class="material-symbols-outlined text-[18px]">account_balance_wallet</span>
+<span>Wallet / Top-Up Audit</span>
+<span class="ml-1 px-1.5 py-0.2 bg-error text-on-error rounded font-label-sm text-label-sm font-bold animate-pulse">3 รออนุมัติ</span>
+</button>
+<button class="tab-btn flex items-center gap-space-xs px-space-md py-2.5 rounded-lg font-headline-sm text-label-md text-on-surface-variant hover:text-on-surface transition-all" id="btn-tab-logs" onclick="switchTab('tab-logs')">
+<span class="material-symbols-outlined text-[18px]">shield</span>
+<span>Audit &amp; Security Logs</span>
+</button>
+</div>
+<!-- TAB 1: Inventory & ID Management -->
+<div class="tab-panel flex flex-col gap-space-md" id="tab-inventory">
+<div class="flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm flex-wrap">
+<div class="bg-surface-container px-space-sm py-1.5 rounded-lg text-body-sm text-on-surface flex items-center gap-2">
+<span class="text-outline">เกม:</span>
+<select class="bg-transparent text-on-surface focus:outline-none">
+<option value="all">ทั้งหมด (All Games)</option>
+<option value="valorant">Valorant</option>
+<option value="rov">RoV (Realm of Valor)</option>
+<option value="genshin">Genshin Impact</option>
+</select>
+</div>
+<div class="bg-surface-container px-space-sm py-1.5 rounded-lg text-body-sm text-on-surface flex items-center gap-2">
+<span class="text-outline">สถานะ:</span>
+<select class="bg-transparent text-on-surface focus:outline-none">
+<option value="all">ทั้งหมด</option>
+<option value="active">เปิดขาย (Available)</option>
+<option value="sold">ขายแล้ว (Sold Out)</option>
+</select>
+</div>
+</div>
+<button class="flex items-center gap-1 bg-surface-bright hover:bg-surface-container-highest text-primary font-headline-sm text-label-md px-space-md py-2 rounded-lg transition-colors" onclick="document.getElementById('modal-add-item').classList.remove('hidden')">
+<span class="material-symbols-outlined text-[18px]">post_add</span>
+<span>เพิ่มบัญชีเกมเข้าระบบ</span>
+</button>
+</div>
+<!-- Inventory Data Table -->
+<div class="overflow-x-auto rounded-xl">
+<table class="w-full text-left font-body-md text-body-md border-collapse">
+<thead>
+<tr class="bg-surface-container-highest text-outline font-label-sm text-label-sm uppercase">
+<th class="p-space-md">รหัสสินค้า / เกม</th>
+<th class="p-space-md">พรีวิว / ไอเทมไฮไลท์</th>
+<th class="p-space-md">ราคาจำหน่าย</th>
+<th class="p-space-md">คงเหลือ (Stock)</th>
+<th class="p-space-md">สถานะการขาย</th>
+<th class="p-space-md text-right">การจัดการ</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-on-surface">
+<!-- Row 1 -->
+<tr class="bg-surface-container hover:bg-surface-container-high transition-colors">
+<td class="p-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container-lowest">
+<img class="w-full h-full object-cover" data-alt="Valorant game badge futuristic neon glowing knife cosmetic thumbnail on deep obsidian surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBi4pCjW2TE8WmoGhBcwUU3-XSSLxddyh5oNRSOJlsTgZj3VqekHj_GCt7ylYxs8Kx43ISQDoXB-2VqPCetBf5F29Yx48zGcBrVLyLXgvYWeSydthVVT8btZWe2lVcHYT4vGV4rr04RkoG-HTT1Oz8STN6MrTmNsZok2QnRFeQ4kiWq3FG1vLlQ-pZJpglg9dFZMLoVhniS_H3cGYqsP0TuswxxlkXQK8lMKcH32TN1QNtOSh6ZmkH"/>
+</div>
+<div>
+<span class="font-headline-sm text-label-lg text-primary">VAL-RAD-9912</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Valorant // Immortal 3 (Asia)</p>
+</div>
+</div>
+</td>
+<td class="p-space-md">
+<span class="px-2 py-0.5 rounded bg-tertiary-container/20 text-tertiary-container font-label-sm text-label-sm">Kuronami No Yaiba + 45 Skins</span>
+</td>
+<td class="p-space-md font-headline-sm text-label-lg font-bold text-on-surface">฿4,500.00</td>
+<td class="p-space-md">
+<span class="px-2 py-1 rounded bg-surface-container-lowest text-primary-container font-label-sm text-label-sm">1 รหัสพร้อมส่ง</span>
+</td>
+<td class="p-space-md">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+<span class="ml-2 font-label-sm text-label-sm text-primary-container">เปิดขาย</span>
+</label>
+</td>
+<td class="p-space-md text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="p-1.5 text-on-surface-variant hover:text-primary transition-colors" title="แก้ไข">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1.5 text-on-surface-variant hover:text-error transition-colors" title="ลบออกจากระบบ">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="bg-surface-container-low hover:bg-surface-container-high transition-colors">
+<td class="p-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container-lowest">
+<img class="w-full h-full object-cover" data-alt="RoV character skin illustration with glowing purple energy wings on dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPNysTQ3oHtdvF2SiHh37Lqdqc460HeMa2tiO19wm0VxPh5dsZQct-Sc6vC-B58m1mZ4r4FRv9bFOLiVJaMLRFOzXsEeiodOp9jsasEZRGOs8arGRIThu0QvuK1xO-ZEbVKdsScA0cVcYpw8aB-VT-B6iCWqU4GR--3Nv1r2we_95qUMLo7HJ4UOiSuY2hagjXUtZ9EW3fJIHmXExnHHOWjtkmUuSVBo16ONRARlUPbGL5MnDUCrn6"/>
+</div>
+<div>
+<span class="font-headline-sm text-label-lg text-secondary">ROV-GLO-4401</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">RoV // Glorious Ruler 80 Stars</p>
+</div>
+</div>
+</td>
+<td class="p-space-md">
+<span class="px-2 py-0.5 rounded bg-secondary-container/40 text-secondary font-label-sm text-label-sm">Nakroth Dimension Breaker + 120 Skins</span>
+</td>
+<td class="p-space-md font-headline-sm text-label-lg font-bold text-on-surface">฿2,890.00</td>
+<td class="p-space-md">
+<span class="px-2 py-1 rounded bg-surface-container-lowest text-primary-container font-label-sm text-label-sm">3 รหัส</span>
+</td>
+<td class="p-space-md">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+<span class="ml-2 font-label-sm text-label-sm text-primary-container">เปิดขาย</span>
+</label>
+</td>
+<td class="p-space-md text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="p-1.5 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1.5 text-on-surface-variant hover:text-error transition-colors">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="bg-surface-container hover:bg-surface-container-high transition-colors">
+<td class="p-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container-lowest">
+<img class="w-full h-full object-cover" data-alt="Anime fantasy character with golden celestial artifacts and cyan magic runes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbmjYfH1OlRrbKXgggE5HZ8ti4tds8bR3GvaVsvmgjxWxWiMZPtiz73l8XTPW1ZERDAis8Z82OrxkiPA6xQ6vBO6HgkCjlVSL8DZYCMlxiQRXjk4irrZfqeSFe2cJElqGCKBaOY4vZqC3QBlijfM8_n4lR_8PNL4UBXU8As5AHEBDJaUaL0p6OFq0VjvK1gnXsJ6nbUyDDyPDrAKVwIQooZ4nPoK7guLSrW_7tv7fh0gmnYhLbzDQb"/>
+</div>
+<div>
+<span class="font-headline-sm text-label-lg text-outline">GEN-AR60-109</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Genshin Impact // AR 60 Whale Acc</p>
+</div>
+</div>
+</td>
+<td class="p-space-md">
+<span class="px-2 py-0.5 rounded bg-tertiary-container/20 text-tertiary-container font-label-sm text-label-sm">C6 Raiden Shogun + R5 Engulfing</span>
+</td>
+<td class="p-space-md font-headline-sm text-label-lg font-bold text-on-surface">฿12,500.00</td>
+<td class="p-space-md">
+<span class="px-2 py-1 rounded bg-surface-container-lowest text-error font-label-sm text-label-sm">0 รหัส (หมด)</span>
+</td>
+<td class="p-space-md">
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+<span class="ml-2 font-label-sm text-label-sm text-outline">ปิดการขาย</span>
+</label>
+</td>
+<td class="p-space-md text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<button class="p-1.5 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1.5 text-on-surface-variant hover:text-error transition-colors">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- TAB 2: Gacha Probability Engine & Validation Alert -->
+<div class="tab-panel hidden flex flex-col gap-space-md" id="tab-gacha">
+<!-- Live Validation Status Banner -->
+<div class="flex flex-wrap items-center justify-between p-space-md rounded-xl bg-surface-container shadow-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary-container/20 flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Mathematical Parity Engine:</span>
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm bg-primary-container text-on-primary-fixed font-bold" id="prob-badge">100.00% VALIDATED</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">อัตราการสุ่มคำนวณแบบ Cryptographic PRNG สุ่มเที่ยงธรรมผ่านตรรกะระบบ</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="flex items-center gap-1 bg-secondary-container hover:bg-secondary-container/80 text-on-secondary-container px-space-md py-2 rounded-lg font-headline-sm text-label-md transition-all shadow-[0_0_12px_rgba(109,17,173,0.4)]" onclick="document.getElementById('modal-gacha-odds').classList.remove('hidden')">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+<span>ปรับแต่งเรทดรอปขั้นสูง</span>
+</button>
+</div>
+</div>
+<!-- Live Dynamic Odds Calculator Table -->
+<div class="bg-surface-container rounded-xl p-space-md">
+<div class="flex items-center justify-between mb-space-md">
+<h3 class="font-headline-sm text-headline-sm text-primary">ตู้สุ่มปัจจุบัน: [LEGENDARY APEX CRATE v4.2]</h3>
+<span class="font-label-sm text-label-sm text-outline">ค่าสุ่มต่อครั้ง: ฿50.00 (หรือ 500 Credits)</span>
+</div>
+<div class="space-y-space-md">
+<!-- Legendary Row -->
+<div class="bg-surface-container-highest p-space-md rounded-lg flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm w-48">
+<span class="w-3 h-3 rounded-full bg-tertiary-container shadow-[0_0_8px_rgba(255,211,136,0.8)]"></span>
+<span class="font-headline-sm text-label-lg text-tertiary-container">LEGENDARY (ทอง)</span>
+</div>
+<div class="flex-1 max-w-md">
+<div class="flex justify-between font-label-sm text-label-sm text-outline mb-1">
+<span>ไอดีสกินแรร์ขั้นสุด / มูลค่า ฿3,000+</span>
+<span class="text-tertiary-container font-bold" id="label-legendary">1.50%</span>
+</div>
+<input class="w-full accent-tertiary-container cursor-pointer" max="10" min="0.1" oninput="recalcOdds()" step="0.1" type="range" value="1.5"/>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant text-right w-36">
+              การันตีที่ 80 ครั้ง
+            </div>
+</div>
+<!-- Epic Row -->
+<div class="bg-surface-container-highest p-space-md rounded-lg flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm w-48">
+<span class="w-3 h-3 rounded-full bg-secondary shadow-[0_0_8px_rgba(224,182,255,0.8)]"></span>
+<span class="font-headline-sm text-label-lg text-secondary">EPIC (ม่วง)</span>
+</div>
+<div class="flex-1 max-w-md">
+<div class="flex justify-between font-label-sm text-label-sm text-outline mb-1">
+<span>ไอดีแรงค์สูง / มูลค่า ฿1,000+</span>
+<span class="text-secondary font-bold" id="label-epic">8.50%</span>
+</div>
+<input class="w-full accent-secondary cursor-pointer" max="25" min="1" oninput="recalcOdds()" step="0.5" type="range" value="8.5"/>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant text-right w-36">
+              การันตีที่ 25 ครั้ง
+            </div>
+</div>
+<!-- Rare Row -->
+<div class="bg-surface-container-highest p-space-md rounded-lg flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm w-48">
+<span class="w-3 h-3 rounded-full bg-primary-container shadow-[0_0_8px_rgba(0,240,255,0.8)]"></span>
+<span class="font-headline-sm text-label-lg text-primary-container">RARE (ฟ้า)</span>
+</div>
+<div class="flex-1 max-w-md">
+<div class="flex justify-between font-label-sm text-label-sm text-outline mb-1">
+<span>เครดิตสุ่มฟรี 200 หรือไอดีเริ่มต้น</span>
+<span class="text-primary-container font-bold" id="label-rare">30.00%</span>
+</div>
+<input class="w-full accent-primary-container cursor-pointer" max="50" min="10" oninput="recalcOdds()" step="1" type="range" value="30.0"/>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant text-right w-36">
+              ไม่มีการันตี
+            </div>
+</div>
+<!-- Common Row -->
+<div class="bg-surface-container-highest p-space-md rounded-lg flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm w-48">
+<span class="w-3 h-3 rounded-full bg-outline"></span>
+<span class="font-headline-sm text-label-lg text-outline">COMMON (ขาว)</span>
+</div>
+<div class="flex-1 max-w-md">
+<div class="flex justify-between font-label-sm text-label-sm text-outline mb-1">
+<span>เหรียญแลกปลอบใจ 10 Vault Coins</span>
+<span class="text-on-surface font-bold" id="label-common">60.00%</span>
+</div>
+<input class="w-full accent-outline cursor-pointer" max="80" min="20" oninput="recalcOdds()" step="1" type="range" value="60.0"/>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant text-right w-36">
+              ไม่มีการันตี
+            </div>
+</div>
+</div>
+<!-- Real-time Sum Meter -->
+<div class="mt-space-lg p-space-md bg-surface-container-lowest rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-sm text-headline-sm text-on-surface">ผลรวมความน่าจะเป็น (Total Sum):</span>
+<span class="font-display-hero text-headline-lg font-extrabold text-primary-container" id="total-val">100.00%</span>
+</div>
+<button class="bg-primary-container hover:bg-primary-fixed text-on-primary-fixed px-space-md py-2 rounded-lg font-headline-sm text-label-md transition-all">
+            บันทึกการตั้งค่าเรท
+          </button>
+</div>
+</div>
+</div>
+<!-- TAB 3: Wallet & TrueMoney Voucher Audit -->
+<div class="tab-panel hidden flex flex-col gap-space-md" id="tab-audit">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">รายการเติมเงินรอการตรวจสอบและอนุมัติ (Audit Queue)</h3>
+<p class="font-body-sm text-body-sm text-outline">ระบบดึงลิงก์ซองของขวัญอัตโนมัติ รายการที่ติดการยืนยัน Manual 3 รายการ</p>
+</div>
+<button class="bg-surface-container-highest hover:bg-surface-bright text-on-surface font-body-sm text-body-sm px-space-md py-1.5 rounded-lg flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">refresh</span>
+<span>รีเฟรชลิสต์</span>
+</button>
+</div>
+<div class="space-y-space-sm">
+<!-- Item 1 -->
+<div class="p-space-md bg-surface-container rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-space-md hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-tertiary-container/20 flex items-center justify-center text-tertiary-container flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">redeem</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-label-lg text-primary font-bold">TMN-VOUCHER #90281</span>
+<span class="px-2 py-0.5 rounded bg-tertiary-container/20 text-tertiary-container font-label-sm text-label-sm">TrueMoney Gift</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">ผู้เติม: <span class="text-primary font-semibold">User_Thanawat (UID: #88219)</span></p>
+<p class="font-label-sm text-label-sm text-outline">URL: https://gift.truemoney.com/campaign/?v=88f910a99...</p>
+</div>
+</div>
+<div class="flex items-center gap-space-lg">
+<div class="text-right">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface">฿1,000.00</span>
+<p class="font-label-sm text-label-sm text-outline">เมื่อ 3 นาทีที่แล้ว</p>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-2 bg-primary-container text-on-primary-fixed hover:bg-primary-fixed rounded-lg font-headline-sm text-label-md flex items-center gap-1 shadow-[0_0_12px_rgba(0,240,255,0.3)]" onclick="this.closest('.p-space-md').remove()">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span>อนุมัติ (Approve)</span>
+</button>
+<button class="px-space-md py-2 bg-surface-container-highest text-error hover:bg-error-container hover:text-on-error-container rounded-lg font-headline-sm text-label-md flex items-center gap-1" onclick="this.closest('.p-space-md').remove()">
+<span class="material-symbols-outlined text-[18px]">cancel</span>
+<span>ปฏิเสธ</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="p-space-md bg-surface-container rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-space-md hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-secondary-container/30 flex items-center justify-center text-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">qr_code_2</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-label-lg text-primary font-bold">QR-PAY #90280</span>
+<span class="px-2 py-0.5 rounded bg-secondary-container/40 text-secondary font-label-sm text-label-sm">PromptPay สแกน</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">ผู้เติม: <span class="text-primary font-semibold">Krit_GamerZ (UID: #91024)</span></p>
+<p class="font-label-sm text-label-sm text-outline">สลิปธนาคารกสิกรไทย เลขอ้างอิง: 20241014902194881</p>
+</div>
+</div>
+<div class="flex items-center gap-space-lg">
+<div class="text-right">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface">฿500.00</span>
+<p class="font-label-sm text-label-sm text-outline">เมื่อ 9 นาทีที่แล้ว</p>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-2 bg-primary-container text-on-primary-fixed hover:bg-primary-fixed rounded-lg font-headline-sm text-label-md flex items-center gap-1 shadow-[0_0_12px_rgba(0,240,255,0.3)]" onclick="this.closest('.p-space-md').remove()">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span>อนุมัติ (Approve)</span>
+</button>
+<button class="px-space-md py-2 bg-surface-container-highest text-error hover:bg-error-container hover:text-on-error-container rounded-lg font-headline-sm text-label-md flex items-center gap-1" onclick="this.closest('.p-space-md').remove()">
+<span class="material-symbols-outlined text-[18px]">cancel</span>
+<span>ปฏิเสธ</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="p-space-md bg-surface-container rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-space-md hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-tertiary-container/20 flex items-center justify-center text-tertiary-container flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">redeem</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-label-lg text-primary font-bold">TMN-VOUCHER #90278</span>
+<span class="px-2 py-0.5 rounded bg-tertiary-container/20 text-tertiary-container font-label-sm text-label-sm">TrueMoney Gift</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">ผู้เติม: <span class="text-primary font-semibold">Chanon_Apex (UID: #77312)</span></p>
+<p class="font-label-sm text-label-sm text-outline">URL: https://gift.truemoney.com/campaign/?v=110ba278...</p>
+</div>
+</div>
+<div class="flex items-center gap-space-lg">
+<div class="text-right">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface">฿350.00</span>
+<p class="font-label-sm text-label-sm text-outline">เมื่อ 18 นาทีที่แล้ว</p>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-2 bg-primary-container text-on-primary-fixed hover:bg-primary-fixed rounded-lg font-headline-sm text-label-md flex items-center gap-1 shadow-[0_0_12px_rgba(0,240,255,0.3)]" onclick="this.closest('.p-space-md').remove()">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span>อนุมัติ (Approve)</span>
+</button>
+<button class="px-space-md py-2 bg-surface-container-highest text-error hover:bg-error-container hover:text-on-error-container rounded-lg font-headline-sm text-label-md flex items-center gap-1" onclick="this.closest('.p-space-md').remove()">
+<span class="material-symbols-outlined text-[18px]">cancel</span>
+<span>ปฏิเสธ</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- TAB 4: Audit & Security Logs -->
+<div class="tab-panel hidden flex flex-col gap-space-md" id="tab-logs">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">บันทึกกิจกรรมของระบบและผู้ดูแล (Security Audit Trail)</h3>
+<p class="font-body-sm text-body-sm text-outline">เก็บบันทึกการเปลี่ยนแปลงสิทธิ์, ปรับอัตราดรอป และการถอน/โอนย้ายข้อมูล</p>
+</div>
+<span class="px-space-sm py-1 rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">Total 1,849 Logs</span>
+</div>
+<div class="overflow-x-auto rounded-xl">
+<table class="w-full text-left font-body-md text-body-md border-collapse">
+<thead>
+<tr class="bg-surface-container-highest text-outline font-label-sm text-label-sm uppercase">
+<th class="p-space-md">เวลา (Timestamp)</th>
+<th class="p-space-md">ผู้ปฏิบัติการ (Operator)</th>
+<th class="p-space-md">การกระทำ (Action)</th>
+<th class="p-space-md">เป้าหมาย (Target)</th>
+<th class="p-space-md">IP Address</th>
+<th class="p-space-md text-right">สถานะ</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-on-surface">
+<tr class="bg-surface-container hover:bg-surface-container-high transition-colors">
+<td class="p-space-md font-body-sm text-body-sm text-outline">14 ต.ค. 2024 - 15:42:10</td>
+<td class="p-space-md">
+<span class="font-headline-sm text-label-md text-primary">Admin_ApexVault</span>
+</td>
+<td class="p-space-md">
+<span class="px-2 py-0.5 rounded bg-primary-container/20 text-primary-container font-label-sm text-label-sm">UPDATE_GACHA_ODDS</span>
+</td>
+<td class="p-space-md text-on-surface font-body-sm text-body-sm">CRATE_VAL_V4 (Legendary: 1.5%)</td>
+<td class="p-space-md font-label-sm text-label-sm text-on-surface-variant">124.120.91.45 (BKK)</td>
+<td class="p-space-md text-right">
+<span class="text-primary-container font-label-sm text-label-sm uppercase font-bold">SUCCESS</span>
+</td>
+</tr>
+<tr class="bg-surface-container-low hover:bg-surface-container-high transition-colors">
+<td class="p-space-md font-body-sm text-body-sm text-outline">14 ต.ค. 2024 - 15:10:04</td>
+<td class="p-space-md">
+<span class="font-headline-sm text-label-md text-secondary">System_Worker_Daemon</span>
+</td>
+<td class="p-space-md">
+<span class="px-2 py-0.5 rounded bg-secondary-container/40 text-secondary font-label-sm text-label-sm">AUTO_DISPATCH_CODE</span>
+</td>
+<td class="p-space-md text-on-surface font-body-sm text-body-sm">ORDER #77291 (UID: #44910)</td>
+<td class="p-space-md font-label-sm text-label-sm text-on-surface-variant">10.0.4.12 (Internal RPC)</td>
+<td class="p-space-md text-right">
+<span class="text-primary-container font-label-sm text-label-sm uppercase font-bold">DELIVERED</span>
+</td>
+</tr>
+<tr class="bg-surface-container hover:bg-surface-container-high transition-colors">
+<td class="p-space-md font-body-sm text-body-sm text-outline">14 ต.ค. 2024 - 14:28:55</td>
+<td class="p-space-md">
+<span class="font-headline-sm text-label-md text-primary">Admin_ApexVault</span>
+</td>
+<td class="p-space-md">
+<span class="px-2 py-0.5 rounded bg-tertiary-container/20 text-tertiary-container font-label-sm text-label-sm">APPROVE_VOUCHER</span>
+</td>
+<td class="p-space-md text-on-surface font-body-sm text-body-sm">TMN #90274 (+฿500.00)</td>
+<td class="p-space-md font-label-sm text-label-sm text-on-surface-variant">124.120.91.45 (BKK)</td>
+<td class="p-space-md text-right">
+<span class="text-primary-container font-label-sm text-label-sm uppercase font-bold">SUCCESS</span>
+</td>
+</tr>
+<tr class="bg-surface-container-low hover:bg-surface-container-high transition-colors">
+<td class="p-space-md font-body-sm text-body-sm text-outline">14 ต.ค. 2024 - 13:05:12</td>
+<td class="p-space-md">
+<span class="font-headline-sm text-label-md text-error">Security_Shield_Bot</span>
+</td>
+<td class="p-space-md">
+<span class="px-2 py-0.5 rounded bg-error-container/40 text-error font-label-sm text-label-sm">FAILED_LOGIN_BLOCKED</span>
+</td>
+<td class="p-space-md text-on-surface font-body-sm text-body-sm">Root SSH Terminal (5 attempts)</td>
+<td class="p-space-md font-label-sm text-label-sm text-error">198.51.100.24 (TOR Exit Node)</td>
+<td class="p-space-md text-right">
+<span class="text-error font-label-sm text-label-sm uppercase font-bold">BLOCKED</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- MODAL 1: Add New Game Account -->
+<div class="fixed inset-0 z-50 bg-surface-container-lowest/80 backdrop-blur-md hidden flex items-center justify-center p-space-md" id="modal-add-item">
+<div class="bg-surface-container-low w-full max-w-xl rounded-xl p-space-lg shadow-2xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-[24px]">add_box</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">เพิ่มรหัสไอดีเกมเข้าคลังสต็อก</h3>
+</div>
+<button class="text-outline hover:text-on-surface" onclick="document.getElementById('modal-add-item').classList.add('hidden')">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+</div>
+<div class="space-y-space-sm font-body-md text-body-md">
+<div>
+<label class="block font-label-sm text-label-sm uppercase text-outline mb-1">เลือกเกมที่จำหน่าย</label>
+<select class="w-full bg-surface-container-highest text-on-surface p-2.5 rounded-lg focus:outline-none">
+<option>Valorant (Riot Games)</option>
+<option>RoV (Garena Thailand)</option>
+<option>Genshin Impact (HoYoverse)</option>
+<option>Free Fire (Garena)</option>
+</select>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm uppercase text-outline mb-1">ชื่อแพ็กเกจ / ไฮไลท์ไอดี</label>
+<input class="w-full bg-surface-container-highest text-on-surface p-2.5 rounded-lg focus:outline-none placeholder:text-outline" placeholder="เช่น Valorant Immortal 3 + Vandal RGX 11z Pro" type="text"/>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div>
+<label class="block font-label-sm text-label-sm uppercase text-outline mb-1">ราคาขาย (บาท ฿)</label>
+<input class="w-full bg-surface-container-highest text-on-surface p-2.5 rounded-lg focus:outline-none placeholder:text-outline" placeholder="2500" type="number"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm uppercase text-outline mb-1">ระดับความหายาก (Tier)</label>
+<select class="w-full bg-surface-container-highest text-on-surface p-2.5 rounded-lg focus:outline-none">
+<option>Legendary (ทอง)</option>
+<option>Epic (ม่วง)</option>
+<option>Rare (ฟ้า)</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm uppercase text-outline mb-1">ข้อมูลล็อกอินสำหรับส่งมอบอัตโนมัติ (Username:Password / Email)</label>
+<textarea class="w-full bg-surface-container-highest text-on-surface p-2.5 rounded-lg focus:outline-none placeholder:text-outline" placeholder="user_valorant_pro@gmail.com:SecretPass2024! (1 บรรทัดต่อ 1 รหัส)" rows="3"></textarea>
+</div>
+</div>
+<div class="flex justify-end gap-space-sm mt-space-sm pt-space-sm">
+<button class="px-space-md py-2 bg-surface-container-highest text-on-surface rounded-lg font-headline-sm text-label-md hover:bg-surface-bright" onclick="document.getElementById('modal-add-item').classList.add('hidden')">
+          ยกเลิก
+        </button>
+<button class="px-space-md py-2 bg-primary-container text-on-primary-fixed rounded-lg font-headline-sm text-label-md hover:bg-primary-fixed shadow-[0_0_16px_rgba(0,240,255,0.4)]" onclick="document.getElementById('modal-add-item').classList.add('hidden')">
+          ยืนยันและนำขึ้นขาย
+        </button>
+</div>
+</div>
+</div>
+<!-- MODAL 2: Adjust Gacha Odds Fine-tuning -->
+<div class="fixed inset-0 z-50 bg-surface-container-lowest/80 backdrop-blur-md hidden flex items-center justify-center p-space-md" id="modal-gacha-odds">
+<div class="bg-surface-container-low w-full max-w-lg rounded-xl p-space-lg shadow-2xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[24px]">casino</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">การคำนวณขั้นสูง: Gacha Engine Tuning</h3>
+</div>
+<button class="text-outline hover:text-on-surface" onclick="document.getElementById('modal-gacha-odds').classList.add('hidden')">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        ระบบใช้ตรรกะ Pseudo-Random Number Generation ร่วมกับตัวคูณ Pity Counter เพื่อป้องกันไม่ให้ผู้เล่นขาดทุนจนเกินไป
+      </p>
+<div class="space-y-space-sm font-body-md text-body-md">
+<div class="p-space-sm bg-surface-container rounded-lg">
+<label class="block font-label-sm text-label-sm text-primary uppercase mb-1">Soft Pity Trigger (ครั้งที่เริ่มเพิ่มเรท)</label>
+<input class="w-full bg-surface-container-highest text-on-surface p-2 rounded-lg focus:outline-none" type="number" value="60"/>
+</div>
+<div class="p-space-sm bg-surface-container rounded-lg">
+<label class="block font-label-sm text-label-sm text-secondary uppercase mb-1">Hard Pity Guarantee (การันตีออกแน่นอน 100%)</label>
+<input class="w-full bg-surface-container-highest text-on-surface p-2 rounded-lg focus:outline-none" type="number" value="80"/>
+</div>
+<div class="p-space-sm bg-surface-container rounded-lg">
+<label class="block font-label-sm text-label-sm text-tertiary-container uppercase mb-1">RTP (Return To Player) Target %</label>
+<input class="w-full bg-surface-container-highest text-on-surface p-2 rounded-lg focus:outline-none" step="0.5" type="number" value="88.5"/>
+</div>
+</div>
+<div class="flex justify-end gap-space-sm mt-space-sm pt-space-sm">
+<button class="px-space-md py-2 bg-surface-container-highest text-on-surface rounded-lg font-headline-sm text-label-md hover:bg-surface-bright" onclick="document.getElementById('modal-gacha-odds').classList.add('hidden')">
+          ปิดหน้าต่าง
+        </button>
+<button class="px-space-md py-2 bg-secondary-container text-on-secondary-container rounded-lg font-headline-sm text-label-md hover:bg-secondary-container/80 shadow-[0_0_16px_rgba(109,17,173,0.5)]" onclick="document.getElementById('modal-gacha-odds').classList.add('hidden')">
+          อัปเดตระบบ Pity
+        </button>
+</div>
+</div>
+</div>
+<!-- Inline Tab Switching & Dynamic Odds Logic -->
+<script>
+    function switchTab(tabId) {
+      document.querySelectorAll('.tab-panel').forEach(el => el.classList.add('hidden'));
+      document.getElementById(tabId).classList.remove('hidden');
+
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('bg-primary-container', 'text-on-primary-container');
+        btn.classList.add('text-on-surface-variant');
+      });
+
+      const activeBtn = document.getElementById('btn-' + tabId);
+      if (activeBtn) {
+        activeBtn.classList.add('bg-primary-container', 'text-on-primary-container');
+        activeBtn.classList.remove('text-on-surface-variant');
+      }
+    }
+
+    function recalcOdds() {
+      // Dynamic visual calculation
+      const sliders = document.querySelectorAll('#tab-gacha input[type="range"]');
+      let valL = parseFloat(sliders[0].value);
+      let valE = parseFloat(sliders[1].value);
+      let valR = parseFloat(sliders[2].value);
+      let valC = parseFloat(sliders[3].value);
+
+      document.getElementById('label-legendary').innerText = valL.toFixed(2) + '%';
+      document.getElementById('label-epic').innerText = valE.toFixed(2) + '%';
+      document.getElementById('label-rare').innerText = valR.toFixed(2) + '%';
+      document.getElementById('label-common').innerText = valC.toFixed(2) + '%';
+
+      let total = (valL + valE + valR + valC).toFixed(2);
+      const totalEl = document.getElementById('total-val');
+      const badgeEl = document.getElementById('prob-badge');
+
+      totalEl.innerText = total + '%';
+
+      if (Math.abs(total - 100.0) < 0.05) {
+        totalEl.className = "font-display-hero text-headline-lg font-extrabold text-primary-container";
+        badgeEl.className = "px-2 py-0.5 rounded font-label-sm text-label-sm bg-primary-container text-on-primary-fixed font-bold";
+        badgeEl.innerText = "100.00% VALIDATED";
+      } else {
+        totalEl.className = "font-display-hero text-headline-lg font-extrabold text-error";
+        badgeEl.className = "px-2 py-0.5 rounded font-label-sm text-label-sm bg-error text-on-error font-bold animate-pulse";
+        badgeEl.innerText = "INVALID: NOT 100%";
+      }
+    }
+  </script>
+</div></main></div><script src="../navigation.js"></script></body></html>

@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="th"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Outfit:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary-fixed-variant": "#6a0baa", "on-surface": "#e1e2eb", "tertiary-fixed-dim": "#ffba27", "primary-fixed-dim": "#00dbe9", "on-background": "#e1e2eb", "primary-container": "#00f0ff", "on-primary-container": "#006970", "surface": "#10131a", "secondary-container": "#6d11ad", "on-primary-fixed": "#002022", "on-primary-fixed-variant": "#004f54", "surface-container-high": "#272a31", "on-secondary-container": "#d7a4ff", "on-tertiary-container": "#7d5800", "error": "#ffb4ab", "surface-variant": "#32353c", "on-tertiary-fixed": "#271900", "secondary-fixed": "#f2daff", "background": "#10131a", "surface-container-low": "#191c22", "tertiary": "#fff4e8", "surface-container-highest": "#32353c", "inverse-on-surface": "#2e3037", "on-surface-variant": "#b9cacb", "on-error": "#690005", "surface-tint": "#00dbe9", "on-tertiary": "#422c00", "primary": "#dbfcff", "surface-container": "#1d2026", "tertiary-fixed": "#ffdea9", "outline": "#849495", "inverse-surface": "#e1e2eb", "on-secondary": "#4c007d", "surface-dim": "#10131a", "on-secondary-fixed": "#2e004e", "error-container": "#93000a", "on-tertiary-fixed-variant": "#5e4100", "surface-bright": "#363940", "inverse-primary": "#006970", "outline-variant": "#3b494b", "surface-container-lowest": "#0b0e14", "on-error-container": "#ffdad6", "on-primary": "#00363a", "primary-fixed": "#7df4ff", "tertiary-container": "#ffd388", "secondary": "#e0b6ff", "secondary-fixed-dim": "#e0b6ff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin": "2rem", "gutter": "1.5rem", "space-lg": "1.5rem", "space-xl": "2.5rem", "margin-mobile": "1rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "space-md": "1rem", "gutter-mobile": "1rem" }, "fontFamily": { "display-hero": [ "Outfit" ], "display-hero-mobile": [ "Outfit" ], "headline-md": [ "Outfit" ], "label-sm": [ "Outfit" ], "headline-xl-mobile": [ "Outfit" ], "headline-xl": [ "Outfit" ], "body-md": [ "Inter" ], "label-lg": [ "Outfit" ], "label-md": [ "Outfit" ], "body-lg": [ "Inter" ], "headline-lg": [ "Outfit" ], "body-sm": [ "Inter" ], "headline-sm": [ "Outfit" ] }, "fontSize": { "display-hero": [ "56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "800" } ], "display-hero-mobile": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "800" } ], "headline-md": [ "22px", { "lineHeight": "30px", "fontWeight": "600" } ], "label-sm": [ "10px", { "lineHeight": "14px", "letterSpacing": "0.1em", "fontWeight": "700" } ], "headline-xl-mobile": [ "28px", { "lineHeight": "36px", "fontWeight": "700" } ], "headline-xl": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "body-md": [ "14px", { "lineHeight": "22px", "fontWeight": "400" } ], "label-lg": [ "14px", { "lineHeight": "18px", "letterSpacing": "0.06em", "fontWeight": "700" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "700" } ], "body-lg": [ "16px", { "lineHeight": "26px", "fontWeight": "400" } ], "headline-lg": [ "28px", { "lineHeight": "36px", "fontWeight": "600" } ], "body-sm": [ "12px", { "lineHeight": "18px", "fontWeight": "400" } ], "headline-sm": [ "18px", { "lineHeight": "26px", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_4px_24px_rgba(0,0,0,0.7)]"><div class="h-20 w-full px-margin-mobile lg:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-sm group" data-path="home" href="#"><img alt="APEX VAULT Logo" class="h-8 w-auto object-contain transition-transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1WVKZp6i3ngQxF5P1iisxrS3aA7jWDvtwT7fNDm3vSCzAoNXgKz4VuKT88vMq36elrtIrk1lWXRuGC9xNResALgg5IOHhxhzG2CzzlQKB64R41hJV529s-2hV-A84sh-EHqvW-f4rN7N9Q_iABWYD20EG7szYCjY-c3U0ehAyl-rTxFNJ6dF5zR80qs49UI62d9mx4iKVeLOsamOJl2H-_ryY86GJ-yR4Y5PiuiLDliWvejymxR_i5CZr0"/><span class="font-headline-sm text-headline-sm uppercase tracking-wider text-primary hidden sm:inline-block">APEX<span class="text-primary-container ml-1">VAULT</span></span></a><nav class="hidden xl:flex items-center gap-space-xs p-1 bg-surface-container-low/60 rounded-xl" data-active-classes="bg-primary-container text-on-primary-container font-headline-sm text-label-md rounded-lg"><a class="px-space-md py-space-sm rounded-lg font-headline-sm text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="home" href="#">หน้าแรก</a><a class="px-space-md py-space-sm rounded-lg font-headline-sm text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="marketplace" href="#">ซื้อไอดีเกม</a><a class="px-space-md py-space-sm rounded-lg font-headline-sm text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="lucky-draw" href="#">สุ่มรางวัล Lucky Draw</a><a class="px-space-md py-space-sm rounded-lg font-headline-sm text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="wallet-topup" href="#">เติมเงิน Wallet</a><a class="px-space-md py-space-sm rounded-lg font-headline-sm text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="order-history" href="#">ประวัติคำสั่งซื้อ</a></nav></div><div class="flex items-center gap-space-sm sm:gap-space-md"><div class="flex items-center bg-surface-container-low rounded-xl p-1 shadow-[0_0_16px_-4px_rgba(0,240,255,0.25)]"><div class="flex items-center gap-space-xs px-space-sm sm:px-space-md py-1"><span class="material-symbols-outlined text-primary-container text-[18px]">account_balance_wallet</span><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-surface-variant leading-none hidden sm:inline">WALLET</span><span class="font-headline-sm text-label-md text-primary font-bold tracking-tight">฿1,450.00</span></div></div><a class="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center transition-transform hover:scale-105 active:scale-95 shadow-[0_0_12px_rgba(0,240,255,0.5)]" data-path="wallet-topup" href="#"><span class="material-symbols-outlined text-[18px] sm:text-[20px] font-bold">add</span></a></div><div class="relative group"><button class="flex items-center gap-space-xs sm:gap-space-sm p-1.5 rounded-xl bg-surface-container-low hover:bg-surface-container-high transition-colors"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden md:flex flex-col text-left"><span class="font-headline-sm text-label-md text-on-surface leading-tight">CyberPhantom</span><span class="font-label-sm text-label-sm text-primary-container leading-none uppercase tracking-wider">VIP TIER 3</span></div><span class="material-symbols-outlined text-on-surface-variant text-[20px] hidden md:inline">expand_more</span></button><div class="absolute right-0 top-full mt-2 w-56 p-space-xs bg-surface-container-high rounded-xl shadow-[0_16px_40px_rgba(0,0,0,0.8)] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50"><div class="p-space-sm mb-1 bg-surface-container rounded-lg md:hidden"><p class="font-headline-sm text-label-md text-on-surface">CyberPhantom</p><p class="font-label-sm text-label-sm text-primary-container">VIP TIER 3</p></div><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest transition-colors font-body-md text-body-md" data-path="user-dashboard" href="#"><span class="material-symbols-outlined text-[18px]">person_outline</span>User Dashboard</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest transition-colors font-body-md text-body-md" data-path="order-history" href="#"><span class="material-symbols-outlined text-[18px]">receipt_long</span>ประวัติการสั่งซื้อ</a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-secondary-fixed-dim hover:text-secondary-fixed hover:bg-secondary-container/30 transition-colors font-body-md text-body-md" data-path="admin-console" href="#"><span class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">admin_panel_settings</span>Admin Console</span><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-secondary-container text-on-secondary-container">PRO</span></a><div class="h-px bg-surface-variant my-1"></div><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-error hover:bg-error-container/30 hover:text-on-error-container transition-colors font-body-md text-body-md" data-path="login" href="#"><span class="material-symbols-outlined text-[18px]">logout</span>ออกจากระบบ</a></div></div><button class="xl:hidden p-2 rounded-xl bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[24px]">menu</span></button></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-20rem)]"><div class="flex flex-col w-full">
+<!-- Interactive Toast Notification -->
+<div class="fixed bottom-8 right-8 z-50 flex items-center gap-space-sm px-space-md py-space-sm rounded-xl bg-surface-container-highest text-primary shadow-2xl transition-all duration-300 opacity-0 pointer-events-none translate-y-4" id="copy-toast">
+<span class="material-symbols-outlined text-primary-container text-[20px]">check_circle</span>
+<span class="font-label-md text-label-md tracking-wide" id="toast-message">คัดลอกข้อมูลสำเร็จเรียบร้อย</span>
+</div>
+<div class="w-full max-w-[1440px] mx-auto px-margin-mobile lg:px-margin py-space-lg flex flex-col gap-space-xl">
+<!-- Breadcrumb Path -->
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md flex-wrap">
+<a class="hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[16px]">home</span>
+        หน้าแรก
+      </a>
+<span class="text-outline-variant font-bold">/</span>
+<a class="hover:text-primary transition-colors" href="#">รายการคำสั่งซื้อ</a>
+<span class="text-outline-variant font-bold">/</span>
+<span class="text-on-surface font-semibold text-primary">คำสั่งซื้อ #APX-9942</span>
+<span class="text-outline-variant font-bold">/</span>
+<span class="text-primary-container font-bold uppercase tracking-wider">ส่งมอบรหัสผ่านอัตโนมัติ</span>
+</div>
+<!-- Celebration & Status Banner -->
+<section class="relative overflow-hidden rounded-xl bg-surface-container-low shadow-xl">
+<!-- Glow Gradients -->
+<div class="absolute -top-24 -left-20 w-80 h-80 rounded-full bg-primary-container/10 blur-[100px] pointer-events-none"></div>
+<div class="absolute -bottom-24 right-0 w-96 h-96 rounded-full bg-secondary-container/20 blur-[120px] pointer-events-none"></div>
+<div class="relative p-space-lg lg:p-space-xl flex flex-col gap-space-lg">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg">
+<div class="flex items-start gap-space-md">
+<div class="relative flex-shrink-0">
+<div class="w-16 h-16 rounded-xl bg-primary-container/20 flex items-center justify-center text-primary-container shadow-[0_0_28px_rgba(0,240,255,0.4)]">
+<span class="material-symbols-outlined text-[36px]" style="font-variation-settings: 'FILL' 1;">task_alt</span>
+</div>
+<span class="absolute -top-1 -right-1 flex h-4 w-4">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-container opacity-75"></span>
+<span class="relative inline-flex rounded-full h-4 w-4 bg-primary-container"></span>
+</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="px-2.5 py-0.5 rounded bg-primary-container/15 text-primary-container font-label-sm text-label-sm tracking-widest uppercase">
+                  INSTANT HANDOFF COMPLETE
+                </span>
+<span class="px-2.5 py-0.5 rounded bg-tertiary-container/20 text-tertiary-fixed-dim font-label-sm text-label-sm tracking-widest uppercase">
+                  VAULT GUARANTEE ACTIVE
+                </span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-primary tracking-tight">
+                ชำระเงินสำเร็จ &amp; ส่งมอบรหัสผ่านอัตโนมัติ
+              </h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+                ระบบได้ทำการโอนกรรมสิทธิ์ไอดีเกมและออกใบรับรองความปลอดภัยเรียบร้อยแล้ว ข้อมูลการเข้าสู่ระบบทั้งหมดถูกเข้ารหัส End-to-End พร้อมสิทธิ์การรับประกันตลอดชีพ
+              </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm self-start lg:self-center">
+<button class="px-space-md py-space-sm rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md transition-all flex items-center gap-2" onclick="window.print()">
+<span class="material-symbols-outlined text-[18px]">print</span>
+<span>พิมพ์เอกสาร</span>
+</button>
+<a class="px-space-md py-space-sm rounded-xl bg-primary-container text-on-primary-container font-headline-sm text-label-md hover:shadow-[0_0_24px_rgba(0,240,255,0.5)] transition-all flex items-center gap-2" href="#certificate-section">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>ดูใบรับรองสิทธิ์</span>
+</a>
+</div>
+</div>
+<!-- Meta Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md pt-space-md bg-surface-container-lowest/60 p-space-md rounded-xl">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">รหัสคำสั่งซื้อ</span>
+<div class="flex items-center gap-1.5 text-on-surface font-headline-sm text-headline-sm">
+<span class="text-primary-container">#APX-9942</span>
+<button class="text-on-surface-variant hover:text-primary transition-colors" onclick="copyToClipboard('APX-9942', 'คัดลอกหมายเลขคำสั่งซื้อแล้ว')">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">เวลาที่ทำรายการ</span>
+<span class="font-headline-sm text-label-lg text-on-surface">24 ต.ค. 2024 • 19:42:18 น.</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">ช่องทางชำระเงิน</span>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">PromptPay QR</span>
+<span class="font-headline-sm text-label-lg text-primary">฿2,890.00</span>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-tertiary-fixed-dim uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">stars</span> CASHBACK เข้ากระเป๋าแล้ว
+            </span>
+<span class="font-headline-sm text-label-lg text-tertiary-fixed-dim">+฿144.50 (คืน 5% VIP)</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Asymmetric Workspace Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- Left Column: Credentials & Security Protocols (7/12 cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<!-- Account Credentials Vault Card -->
+<div class="rounded-xl bg-surface-container-low p-space-lg flex flex-col gap-space-lg shadow-xl relative overflow-hidden">
+<div class="flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[24px]">key</span>
+</div>
+<div>
+<h2 class="font-headline-md text-headline-md text-primary">ข้อมูลบัญชีสำหรับเข้าสู่ระบบ</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">ข้อมูลส่งตรงจากระบบความปลอดภัย APEX Instant Vault</p>
+</div>
+</div>
+<span class="hidden sm:inline-flex items-center gap-1 px-3 py-1 rounded bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+              เข้ารหัส AES-256
+            </span>
+</div>
+<!-- Alert Bar -->
+<div class="flex items-start gap-space-sm p-space-md rounded-xl bg-error-container/30 text-on-error-container font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-error text-[22px] flex-shrink-0 mt-0.5">warning</span>
+<div class="flex flex-col gap-0.5">
+<span class="font-headline-sm text-label-md text-error font-bold">คำเตือนด้านความปลอดภัยสูงสุด</span>
+<p>กรุณาคัดลอกข้อมูลและเปลี่ยนรหัสผ่านทันที พร้อมผูกเบอร์โทรศัพท์และเปิดการยืนยันตัวตน 2 ชั้น (2FA) ตามขั้นตอนด้านล่าง ห้ามแชร์ข้อมูลชุดนี้แก่บุคคลอื่นทุกกรณี</p>
+</div>
+</div>
+<!-- Interactive Credentials Form Matrix -->
+<div class="flex flex-col gap-space-md">
+<!-- Username/Login -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex justify-between items-center text-on-surface-variant font-label-md text-label-md">
+<label>ไอดีล็อกอินเกม / การีน่า (LOGIN ID / USERNAME)</label>
+<span class="text-primary-container font-label-sm text-label-sm">พร้อมใช้งาน</span>
+</div>
+<div class="flex items-center bg-surface-container rounded-xl p-space-xs shadow-inner">
+<div class="px-space-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">person</span>
+</div>
+<input class="w-full bg-transparent text-primary font-headline-sm text-label-lg outline-none select-all py-1" id="cred-user" readonly="" type="text" value="apex_hunter_ff99@proton.me"/>
+<button class="flex-shrink-0 px-space-md py-space-sm rounded-lg bg-surface-container-high hover:bg-primary-container hover:text-on-primary-container text-on-surface font-label-md text-label-md transition-all flex items-center gap-1.5" onclick="copyToClipboard('apex_hunter_ff99@proton.me', 'คัดลอกไอดีล็อกอินแล้ว')">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span>คัดลอก</span>
+</button>
+</div>
+</div>
+<!-- Password with Toggle -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex justify-between items-center text-on-surface-variant font-label-md text-label-md">
+<label>รหัสผ่านเข้าเกมปัจจุบัน (GAME PASSWORD)</label>
+<span class="text-tertiary-fixed-dim font-label-sm text-label-sm">เปลี่ยนทันทีหลังล็อกอิน</span>
+</div>
+<div class="flex items-center bg-surface-container rounded-xl p-space-xs shadow-inner">
+<div class="px-space-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">password</span>
+</div>
+<input class="w-full bg-transparent text-primary font-headline-sm text-label-lg outline-none select-all py-1 tracking-wider" id="cred-pass" readonly="" type="password" value="ApexV@ult#9928FF!"/>
+<div class="flex items-center gap-1 flex-shrink-0">
+<button class="p-2 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface transition-colors" id="toggle-pass-btn" onclick="togglePasswordVisibility('cred-pass', 'toggle-pass-btn')" title="แสดง/ซ่อนรหัสผ่าน">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="px-space-md py-space-sm rounded-lg bg-surface-container-high hover:bg-primary-container hover:text-on-primary-container text-on-surface font-label-md text-label-md transition-all flex items-center gap-1.5" onclick="copyToClipboard('ApexV@ult#9928FF!', 'คัดลอกรหัสผ่านเกมแล้ว')">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span>คัดลอก</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Primary Associated Email -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex justify-between items-center text-on-surface-variant font-label-md text-label-md">
+<label>อีเมลต้นทางผูกบัญชี (FIRST / CLEAN EMAIL)</label>
+<span class="text-secondary font-label-sm text-label-sm">ส่งมอบสิทธิ์เมลสะอาด 100%</span>
+</div>
+<div class="flex items-center bg-surface-container rounded-xl p-space-xs shadow-inner">
+<div class="px-space-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">mail</span>
+</div>
+<input class="w-full bg-transparent text-primary font-headline-sm text-label-lg outline-none select-all py-1" id="cred-email" readonly="" type="text" value="apex_hunter_ff99@proton.me"/>
+<button class="flex-shrink-0 px-space-md py-space-sm rounded-lg bg-surface-container-high hover:bg-primary-container hover:text-on-primary-container text-on-surface font-label-md text-label-md transition-all flex items-center gap-1.5" onclick="copyToClipboard('apex_hunter_ff99@proton.me', 'คัดลอกอีเมลเรียบร้อย')">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span>คัดลอก</span>
+</button>
+</div>
+</div>
+<!-- Email Password -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex justify-between items-center text-on-surface-variant font-label-md text-label-md">
+<label>รหัสผ่านกล่องจดหมายอีเมล (EMAIL ACCESS KEY)</label>
+<span class="text-on-surface-variant font-label-sm text-label-sm">Proton Mail Secured</span>
+</div>
+<div class="flex items-center bg-surface-container rounded-xl p-space-xs shadow-inner">
+<div class="px-space-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">lock_clock</span>
+</div>
+<input class="w-full bg-transparent text-primary font-headline-sm text-label-lg outline-none select-all py-1 tracking-wider" id="cred-email-pass" readonly="" type="password" value="GamerVault!2024Secure"/>
+<div class="flex items-center gap-1 flex-shrink-0">
+<button class="p-2 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface transition-colors" id="toggle-email-btn" onclick="togglePasswordVisibility('cred-email-pass', 'toggle-email-btn')" title="แสดง/ซ่อนรหัสผ่านอีเมล">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="px-space-md py-space-sm rounded-lg bg-surface-container-high hover:bg-primary-container hover:text-on-primary-container text-on-surface font-label-md text-label-md transition-all flex items-center gap-1.5" onclick="copyToClipboard('GamerVault!2024Secure', 'คัดลอกรหัสผ่านอีเมลแล้ว')">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span>คัดลอก</span>
+</button>
+</div>
+</div>
+</div>
+<!-- 2FA Backup Codes Chamber -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<div class="flex justify-between items-center text-on-surface-variant font-label-md text-label-md">
+<label class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary-container text-[18px]">shield</span>
+                  รหัสกู้คืนสำรองฉุกเฉิน (2FA EMERGENCY BACKUP CODES)
+                </label>
+<span class="text-primary-container font-label-sm text-label-sm">8 ชุดรหัสที่ใช้งานได้</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest grid grid-cols-2 sm:grid-cols-4 gap-space-sm text-center">
+<span class="p-1.5 bg-surface-container rounded font-label-md text-label-md text-primary select-all">8921-4402</span>
+<span class="p-1.5 bg-surface-container rounded font-label-md text-label-md text-primary select-all">1928-3310</span>
+<span class="p-1.5 bg-surface-container rounded font-label-md text-label-md text-primary select-all">5521-9042</span>
+<span class="p-1.5 bg-surface-container rounded font-label-md text-label-md text-primary select-all">7718-2091</span>
+<span class="p-1.5 bg-surface-container rounded font-label-md text-label-md text-primary select-all">4490-1288</span>
+<span class="p-1.5 bg-surface-container rounded font-label-md text-label-md text-primary select-all">6301-9923</span>
+<span class="p-1.5 bg-surface-container rounded font-label-md text-label-md text-primary select-all">9012-7814</span>
+<span class="p-1.5 bg-surface-container rounded font-label-md text-label-md text-primary select-all">3389-6612</span>
+</div>
+<div class="flex justify-end gap-space-sm pt-1">
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-highest text-on-surface-variant hover:text-primary font-label-sm text-label-sm transition-all flex items-center gap-1.5" onclick="downloadTextFile()">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+<span>ดาวน์โหลดไฟล์ข้อความ (.TXT)</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Bulk Export CTA Bar -->
+<div class="pt-space-md flex flex-col sm:flex-row items-center justify-between gap-space-md bg-surface-container-highest/40 p-space-md rounded-xl">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary-container text-[24px]">sim_card_download</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-label-md text-on-surface">บันทึกชุดข้อมูลบัญชีทั้งหมด</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">รหัสผ่าน เมลสำรอง เอกสารกรรมสิทธิ์ รวมในไฟล์เดียว</span>
+</div>
+</div>
+<button class="w-full sm:w-auto px-space-lg py-space-sm rounded-xl bg-primary-container text-on-primary-container font-headline-sm text-label-md shadow-[0_0_20px_rgba(0,240,255,0.4)] hover:shadow-[0_0_30px_rgba(0,240,255,0.7)] transition-all flex items-center justify-center gap-2" onclick="downloadAllBundle()">
+<span class="material-symbols-outlined text-[18px]">download_for_offline</span>
+<span>ดาวน์โหลดข้อมูลทั้งหมด (.PDF/.TXT)</span>
+</button>
+</div>
+</div>
+<!-- Security Hand-off Protocol Walkthrough (4 Steps) -->
+<div class="rounded-xl bg-surface-container-low p-space-lg flex flex-col gap-space-lg shadow-xl">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container">shield_with_heart</span>
+                ขั้นตอนการเปลี่ยนข้อมูลเพื่อความปลอดภัย (4 ขั้นตอนจำเป็น)
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">ปฏิบัติตามลำดับเพื่อเปิดใช้งานสิทธิ์การรับประกันสมบูรณ์แบบ</p>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm">
+              ใช้เวลา ~3 นาที
+            </span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Step 1 -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-xs relative group hover:bg-surface-container-high transition-colors">
+<div class="flex items-center justify-between">
+<span class="w-7 h-7 rounded-full bg-primary-container/20 text-primary-container flex items-center justify-center font-headline-sm text-label-md">1</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">login</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary">ล็อกอินเข้าสู่ตัวเกม</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                เปิดแอปพลิเคชัน Free Fire หรือเข้าสู่ศูนย์บัญชีการีน่า ด้วย Login ID และ Password ที่ระบุไว้ด้านบนเพื่อตรวจสอบความถูกต้องของไอเทม
+              </p>
+</div>
+<!-- Step 2 -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-xs relative group hover:bg-surface-container-high transition-colors">
+<div class="flex items-center justify-between">
+<span class="w-7 h-7 rounded-full bg-primary-container/20 text-primary-container flex items-center justify-center font-headline-sm text-label-md">2</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">phonelink_lock</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary">เปลี่ยนรหัส &amp; ผูกเบอร์ส่วนตัว</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                ไปที่การตั้งค่าความปลอดภัย (Security Settings) แก้ไขรหัสผ่านใหม่ และทำการผูกหมายเลขโทรศัพท์มือถือส่วนตัวของคุณเองทันที
+              </p>
+</div>
+<!-- Step 3 -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-xs relative group hover:bg-surface-container-high transition-colors">
+<div class="flex items-center justify-between">
+<span class="w-7 h-7 rounded-full bg-primary-container/20 text-primary-container flex items-center justify-center font-headline-sm text-label-md">3</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">devices</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary">เตะเซสชันอุปกรณ์อื่นออกทั้งหมด</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                กดเลือก "ออกจากระบบจากทุกอุปกรณ์" (Log out of all devices) เพื่อป้องกันไม่ให้มีเครื่องผู้ขายหรือเซสชันเก่าค้างอยู่ในระบบ
+              </p>
+</div>
+<!-- Step 4 -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-space-xs relative group hover:bg-surface-container-high transition-colors">
+<div class="flex items-center justify-between">
+<span class="w-7 h-7 rounded-full bg-primary-container/20 text-primary-container flex items-center justify-center font-headline-sm text-label-md">4</span>
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[20px]">verified</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-tertiary-fixed-dim">ยืนยันรับประกันตลอดชีพ</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                เก็บบันทึกใบรับรอง APEX Digital Warranty ด้านขวามือ ระบบจะเปิดสัญญาคุ้มครองความปลอดภัย 100% Lifetime Protection อัตโนมัติ
+              </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Digital Warranty Certificate, Cashback & Support (5/12 cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg">
+<!-- Digital Warranty Certificate Card (Cyber Gold / Cyan Holographic Motif) -->
+<div class="relative rounded-xl bg-gradient-to-b from-surface-container-high via-surface-container-low to-surface-container-lowest p-space-lg shadow-2xl overflow-hidden" id="certificate-section">
+<!-- Subtle Top Level Accent Line (Legendary Gold) -->
+<div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-tertiary-fixed-dim via-primary-container to-secondary"></div>
+<div class="flex items-start justify-between gap-space-sm mb-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-tertiary-fixed-dim uppercase tracking-widest flex items-center gap-1 font-bold">
+<span class="material-symbols-outlined text-[16px]">workspace_premium</span>
+                OFFICIAL APEX SECURITY CONTRACT
+              </span>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-0.5">ใบรับรองการันตีไอดีดิจิทัล</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">100% Lifetime Asset Insurance</p>
+</div>
+<div class="px-2.5 py-1 rounded bg-tertiary-fixed-dim/20 text-tertiary-fixed-dim font-headline-sm text-label-sm tracking-wider uppercase flex items-center gap-1 shadow-[0_0_16px_rgba(255,186,39,0.3)]">
+<span class="material-symbols-outlined text-[14px]">verified_user</span>
+              VERIFIED
+            </div>
+</div>
+<!-- Certificate Spec Matrix -->
+<div class="flex flex-col gap-space-sm bg-surface-container-lowest/80 p-space-md rounded-xl mb-space-md">
+<div class="flex justify-between items-center text-body-sm text-on-surface-variant">
+<span>รหัสใบรับรองสิทธิ์:</span>
+<span class="font-headline-sm text-label-md text-primary select-all">CERT-APX-88920-FF</span>
+</div>
+<div class="flex justify-between items-start gap-space-sm text-body-sm text-on-surface-variant">
+<span class="flex-shrink-0">ทรัพย์สินที่ซื้อ:</span>
+<span class="font-headline-sm text-body-sm text-on-surface text-right">
+                ID Free Fire ปีกทอง + EVO Lv.7 (6 กระบอก) + สกินซากุระ Season 1
+              </span>
+</div>
+<div class="flex justify-between items-center text-body-sm text-on-surface-variant">
+<span>ผู้ขายผู้ส่งมอบ:</span>
+<span class="font-headline-sm text-label-md text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+                APEX Merchant #042
+              </span>
+</div>
+<div class="flex justify-between items-center text-body-sm text-on-surface-variant">
+<span>เงินประกันวางค้ำ:</span>
+<span class="font-headline-sm text-label-md text-on-surface font-bold">฿200,000.00 บาท (Locked)</span>
+</div>
+<div class="flex justify-between items-center text-body-sm text-on-surface-variant">
+<span>ขอบเขตความคุ้มครอง:</span>
+<span class="font-headline-sm text-label-sm text-primary-container uppercase">ดึงคืน / โดนแบน / ชดใช้ 100%</span>
+</div>
+<div class="flex justify-between items-center text-body-sm text-on-surface-variant">
+<span>ระยะเวลาคุ้มครอง:</span>
+<span class="font-headline-sm text-label-md text-tertiary-fixed-dim">ตลอดอายุการใช้งาน (Lifetime)</span>
+</div>
+</div>
+<!-- Digital Seal & QR Verification Simulator -->
+<div class="flex items-center justify-between gap-space-md p-space-sm bg-surface-container-high/60 rounded-xl">
+<div class="flex items-center gap-space-sm">
+<!-- Inline QR Visual Element -->
+<div class="w-14 h-14 bg-surface-container-lowest rounded-lg p-1.5 flex items-center justify-center flex-shrink-0">
+<svg class="w-full h-full text-primary" fill="currentColor" viewbox="0 0 24 24">
+<path d="M2 2h8v8H2V2zm2 2v4h4V4H4zm8-2h8v8h-8V2zm2 2v4h4V4h-4zM2 14h8v8H2v-8zm2 2v4h4v-4H4zm11-2h2v2h-2v-2zm-3 0h2v4h-2v-4zm6 0h2v4h-2v-4zm-3 4h2v2h-2v-2zm3 0h2v4h-2v-4zm-6 2h2v2h-2v-2zm9-8h2v2h-2V8zm0 11h2v2h-2v-2zM5 5h2v2H5V5zm12 0h2v2h-2V5zM5 17h2v2H5v-2z"></path>
+</svg>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-label-md text-primary">สแกนตรวจสอบสิทธิ์</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">ตรวจสอบบล็อกเชน Hash บนระบบ</span>
+</div>
+</div>
+<button class="px-space-md py-space-sm rounded-lg bg-surface-container hover:bg-surface-container-highest text-on-surface font-label-md text-label-md transition-all flex items-center gap-1" onclick="verifyCertificateModal()">
+<span class="material-symbols-outlined text-[16px]">search_check</span>
+<span>ตรวจสอบ</span>
+</button>
+</div>
+</div>
+<!-- Order Summary & Cashback Reward Card -->
+<div class="rounded-xl bg-surface-container-low p-space-lg flex flex-col gap-space-md shadow-xl">
+<div class="flex items-center justify-between">
+<h4 class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary-fixed-dim">account_balance_wallet</span>
+              สรุปยอดชำระ &amp; เครดิตเงินคืน
+            </h4>
+<span class="px-2 py-0.5 rounded bg-primary-container/10 text-primary-container font-label-sm text-label-sm">
+              ชำระครบถ้วน
+            </span>
+</div>
+<div class="flex flex-col gap-space-xs text-body-sm text-on-surface-variant">
+<div class="flex justify-between items-center">
+<span>ราคาสินค้าไอดีเกม:</span>
+<span class="text-on-surface font-headline-sm text-label-md">฿2,890.00</span>
+</div>
+<div class="flex justify-between items-center">
+<span>ค่าธรรมเนียมการโอนกรรมสิทธิ์:</span>
+<span class="text-primary-container font-headline-sm text-label-md">฿0.00 (ฟรี)</span>
+</div>
+<div class="flex justify-between items-center">
+<span>คะแนนสะสมที่จะได้รับ:</span>
+<span class="text-secondary font-headline-sm text-label-md">+289 APEX Points</span>
+</div>
+<div class="h-px bg-surface-variant my-1"></div>
+<div class="flex justify-between items-center font-headline-sm text-headline-sm text-on-surface">
+<span>ยอดเงินที่ตัดจริง:</span>
+<span class="text-primary">฿2,890.00</span>
+</div>
+</div>
+<!-- Cashback Notice Highlight -->
+<div class="p-space-md rounded-xl bg-tertiary-container/15 flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-tertiary-container/30 flex items-center justify-center text-tertiary-fixed-dim">
+<span class="material-symbols-outlined text-[20px]">currency_exchange</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-label-md text-tertiary-fixed-dim">+฿144.50 เข้า Cyber Wallet</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">ยอดเงินคงเหลือใหม่: <strong class="text-primary">฿1,594.50</strong></span>
+</div>
+</div>
+<a class="px-space-md py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-primary font-headline-sm text-label-sm transition-all flex items-center gap-1" href="#">
+<span>ไปกระเป๋าเงิน</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Help & Support Standby Card -->
+<div class="rounded-xl bg-surface-container-low p-space-lg flex flex-col gap-space-sm shadow-xl">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[20px]">support_agent</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">มีข้อสงสัยหรือพบปัญหา?</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">แอดมินพร้อมดูแล 24 ชั่วโมง ผ่านระบบ Live Chat สด</p>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            หากคุณไม่สามารถล็อกอินได้ หรือพบว่ารหัสผ่านมีความคลาดเคลื่อน ให้กดแจ้งเคสด่วนภายใน 1 ชั่วโมงเพื่ออายัดเงินประกันของผู้ขาย
+          </p>
+<div class="pt-space-xs flex items-center gap-space-sm">
+<button class="flex-1 py-space-sm px-space-md rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-primary font-headline-sm text-label-md transition-all flex items-center justify-center gap-2" onclick="openLiveSupport()">
+<span class="material-symbols-outlined text-[18px]">forum</span>
+<span>ติดต่อฝ่ายบริการทันที</span>
+</button>
+<a class="p-space-sm rounded-xl bg-surface-container hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface transition-colors" href="#" title="คู่มือแก้ปัญหา">
+<span class="material-symbols-outlined text-[20px]">help_outline</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Navigation & Reward Flow CTA Bar -->
+<section class="mt-space-md p-space-lg rounded-xl bg-surface-container-low shadow-2xl flex flex-col md:flex-row items-center justify-between gap-space-lg">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-secondary-container/40 flex items-center justify-center text-secondary shadow-[0_0_20px_rgba(157,78,221,0.3)]">
+<span class="material-symbols-outlined text-[28px]">casino</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-label-md text-secondary uppercase tracking-wider flex items-center gap-1">
+            สิทธิพิเศษเฉพาะคำสั่งซื้อนี้
+          </span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">รับฟรี 1 ตั๋วสุ่มในตู้ Apex Lucky Draw</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">หมุนลุ้นรับไอดีเทพประจำสัปดาห์หรือเงินคืนเครดิตสูงสุด ฿5,000</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm flex-wrap w-full md:w-auto justify-end">
+<a class="w-full sm:w-auto px-space-md py-space-sm rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-headline-sm text-label-md transition-all text-center" href="#">
+          กลับสู่หน้าหลัก
+        </a>
+<a class="w-full sm:w-auto px-space-md py-space-sm rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-headline-sm text-label-md transition-all text-center" href="#">
+          ประวัติคำสั่งซื้อ
+        </a>
+<a class="w-full sm:w-auto px-space-lg py-space-sm rounded-xl bg-gradient-to-r from-secondary-container to-secondary text-surface-container-lowest font-headline-sm text-label-md shadow-[0_0_20px_rgba(224,182,255,0.4)] hover:shadow-[0_0_30px_rgba(224,182,255,0.6)] transition-all flex items-center justify-center gap-2" href="#">
+<span class="material-symbols-outlined text-[20px]">stars</span>
+<span>ไปใช้สิทธิ์หมุนสุ่มฟรี</span>
+</a>
+</div>
+</section>
+</div>
+</div>
+<script>
+  function showToast(message) {
+    const toast = document.getElementById('copy-toast');
+    const msgEl = document.getElementById('toast-message');
+    if (toast && msgEl) {
+      msgEl.innerText = message;
+      toast.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-4');
+      toast.classList.add('opacity-100', 'translate-y-0');
+      setTimeout(() => {
+        toast.classList.remove('opacity-100', 'translate-y-0');
+        toast.classList.add('opacity-0', 'pointer-events-none', 'translate-y-4');
+      }, 2600);
+    }
+  }
+
+  function copyToClipboard(text, successMsg) {
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(text).then(() => {
+        showToast(successMsg || 'คัดลอกข้อมูลสำเร็จเรียบร้อย');
+      }).catch(() => {
+        fallbackCopy(text, successMsg);
+      });
+    } else {
+      fallbackCopy(text, successMsg);
+    }
+  }
+
+  function fallbackCopy(text, successMsg) {
+    const tempInput = document.createElement('input');
+    tempInput.value = text;
+    document.body.appendChild(tempInput);
+    tempInput.select();
+    document.execCommand('copy');
+    document.body.removeChild(tempInput);
+    showToast(successMsg || 'คัดลอกข้อมูลสำเร็จเรียบร้อย');
+  }
+
+  function togglePasswordVisibility(inputId, btnId) {
+    const input = document.getElementById(inputId);
+    const btn = document.getElementById(btnId);
+    if (!input || !btn) return;
+    
+    if (input.type === 'password') {
+      input.type = 'text';
+      btn.innerHTML = '<span class="material-symbols-outlined text-[18px]">visibility_off</span>';
+      showToast('เปิดแสดงรหัสผ่านแล้ว');
+    } else {
+      input.type = 'password';
+      btn.innerHTML = '<span class="material-symbols-outlined text-[18px]">visibility</span>';
+      showToast('ซ่อนรหัสผ่านแล้ว');
+    }
+  }
+
+  function downloadTextFile() {
+    const content = `=========================================
+APEX VAULT - 2FA BACKUP CODES
+ORDER: #APX-9942
+ASSET: ID Free Fire EVO Lv.7
+DATE: 2024-10-24 19:42:18
+=========================================
+
+8921-4402
+1928-3310
+5521-9042
+7718-2091
+4490-1288
+6301-9923
+9012-7814
+3389-6612
+
+* Note: เก็บไฟล์นี้ไว้ในที่ปลอดภัย ห้ามเปิดเผยแก่ผู้อื่น`;
+    
+    const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = 'APEX-9942-2FA-BackupCodes.txt';
+    link.click();
+    showToast('ดาวน์โหลดรหัสสำรองเรียบร้อย');
+  }
+
+  function downloadAllBundle() {
+    const bundleText = `=====================================================
+APEX VAULT - DIGITAL ASSET HANDOVER CERTIFICATE
+Order ID: #APX-9942
+Purchase Date: 2024-10-24 19:42:18
+=====================================================
+
+[LOGIN CREDENTIALS]
+Username / ID: apex_hunter_ff99@proton.me
+Password: ApexV@ult#9928FF!
+Clean Email: apex_hunter_ff99@proton.me
+Email Key: GamerVault!2024Secure
+
+[2FA BACKUP CODES]
+- 8921-4402
+- 1928-3310
+- 5521-9042
+- 7718-2091
+- 4490-1288
+- 6301-9923
+- 9012-7814
+- 3389-6612
+
+[WARRANTY CERTIFICATE]
+Certificate Code: CERT-APX-88920-FF
+Protection: 100% Lifetime Warranty
+Merchant: Verified Seller #042 (Deposit 200,000 THB)
+Customer Support: 24/7 Priority Desk
+=====================================================`;
+
+    const blob = new Blob([bundleText], { type: 'text/plain;charset=utf-8' });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = 'APEX-9942-Full-Handoff-Package.txt';
+    link.click();
+    showToast('กำลังดาวน์โหลดข้อมูลบัญชีทั้งหมด (.TXT)');
+  }
+
+  function verifyCertificateModal() {
+    showToast('ใบรับรอง CERT-APX-88920-FF มีผลคุ้มครองสมบูรณ์ 100%');
+  }
+
+  function openLiveSupport() {
+    showToast('กำลังเชื่อมต่อเจ้าหน้าที่พิเศษสำหรับเคส #APX-9942...');
+  }
+</script></main><footer class="w-full bg-surface-container-lowest shadow-[0_-4px_24px_rgba(0,0,0,0.5)] pt-space-xl pb-space-lg"><div class="w-full px-margin-mobile lg:px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter mb-space-xl"><div class="flex flex-col gap-space-sm"><div class="flex items-center gap-space-xs"><img alt="APEX VAULT Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WVKZp6i3ngQxF5P1iisxrS3aA7jWDvtwT7fNDm3vSCzAoNXgKz4VuKT88vMq36elrtIrk1lWXRuGC9xNResALgg5IOHhxhzG2CzzlQKB64R41hJV529s-2hV-A84sh-EHqvW-f4rN7N9Q_iABWYD20EG7szYCjY-c3U0ehAyl-rTxFNJ6dF5zR80qs49UI62d9mx4iKVeLOsamOJl2H-_ryY86GJ-yR4Y5PiuiLDliWvejymxR_i5CZr0"/><span class="font-headline-sm text-headline-sm uppercase tracking-wider text-primary">APEX<span class="text-primary-container ml-1">VAULT</span></span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">แพลตฟอร์มตลาดกลางซื้อขายไอดีเกมระดับพรีเมียม สกินระดับตำนาน และระบบสุ่มไอเทม Lucky Draw ความปลอดภัยสูงด้วยระบบจัดส่งอัตโนมัติ 24 ชั่วโมง</p><div class="flex items-center gap-space-sm pt-space-xs"><a aria-label="Discord Community" class="w-9 h-9 rounded-lg bg-surface-container-low hover:bg-primary-container hover:text-on-primary-container text-on-surface-variant flex items-center justify-center transition-all" href="#"><span class="material-symbols-outlined text-[20px]">forum</span></a><a aria-label="Facebook Community" class="w-9 h-9 rounded-lg bg-surface-container-low hover:bg-primary-container hover:text-on-primary-container text-on-surface-variant flex items-center justify-center transition-all" href="#"><span class="material-symbols-outlined text-[20px]">public</span></a></div></div><div class="flex flex-col gap-space-sm"><h4 class="font-headline-sm text-headline-sm text-on-surface">บริการหลัก</h4><div class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><a class="hover:text-primary transition-colors" data-path="marketplace" href="#">ตลาดซื้อขายไอดีเกม</a><a class="hover:text-primary transition-colors" data-path="lucky-draw" href="#">สุ่มกาชาไอเทมแรร์</a><a class="hover:text-primary transition-colors" data-path="wallet-topup" href="#">เติมเงินระบบอัตโนมัติ</a><a class="hover:text-primary transition-colors" data-path="order-history" href="#">ตรวจเช็คสถานะออเดอร์</a></div></div><div class="flex flex-col gap-space-sm"><h4 class="font-headline-sm text-headline-sm text-on-surface">ความปลอดภัยและมาตรฐาน</h4><div class="flex flex-col gap-space-sm font-body-sm text-body-sm"><div class="flex items-center gap-space-sm text-on-surface-variant"><span class="material-symbols-outlined text-primary-container text-[20px]">verified_user</span><span>ระบบความปลอดภัย SSL 256-bit</span></div><div class="flex items-center gap-space-sm text-on-surface-variant"><span class="material-symbols-outlined text-primary-container text-[20px]">bolt</span><span>จัดส่งไอดีทันใจ Instant Delivery</span></div><div class="flex items-center gap-space-sm text-on-surface-variant"><span class="material-symbols-outlined text-tertiary-fixed-dim text-[20px]">workspace_premium</span><span>รับประกันไอดีปลอดภัย 100% Guaranteed</span></div></div></div><div class="flex flex-col gap-space-sm"><h4 class="font-headline-sm text-headline-sm text-on-surface">ช่องทางการชำระเงิน</h4><p class="font-body-sm text-body-sm text-on-surface-variant">รองรับระบบชำระเงินชั้นนำรวดเร็วและไม่มีค่าธรรมเนียม</p><div class="flex flex-wrap gap-space-xs"><div class="px-3 py-1.5 bg-surface-container-low rounded-lg text-on-surface font-label-md text-label-md flex items-center gap-1.5"><span class="material-symbols-outlined text-primary-container text-[16px]">qr_code_2</span>PromptPay</div><div class="px-3 py-1.5 bg-surface-container-low rounded-lg text-on-surface font-label-md text-label-md flex items-center gap-1.5"><span class="material-symbols-outlined text-primary-container text-[16px]">account_balance_wallet</span>TrueMoney</div><div class="px-3 py-1.5 bg-surface-container-low rounded-lg text-on-surface font-label-md text-label-md flex items-center gap-1.5"><span class="material-symbols-outlined text-primary-container text-[16px]">credit_card</span>Credit Card</div></div></div></div><div class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-on-surface-variant"><p>© 2024 APEX VAULT. All rights reserved. ศูนย์รวมการค้าไอดีและดิจิทัลแอสเซทอีสปอร์ต</p><div class="flex items-center gap-space-md"><a class="hover:text-on-surface transition-colors" data-path="terms-and-conditions" href="#">ข้อกำหนดการใช้งาน</a><a class="hover:text-on-surface transition-colors" data-path="privacy-policy" href="#">นโยบายความเป็นส่วนตัว</a></div></div></div></footer><script src="../navigation.js"></script></body></html>
