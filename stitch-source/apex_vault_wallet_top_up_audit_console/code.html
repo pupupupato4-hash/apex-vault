@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="th"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Outfit:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary-fixed-variant": "#6a0baa", "on-surface": "#e1e2eb", "tertiary-fixed-dim": "#ffba27", "primary-fixed-dim": "#00dbe9", "on-background": "#e1e2eb", "primary-container": "#00f0ff", "on-primary-container": "#006970", "surface": "#10131a", "secondary-container": "#6d11ad", "on-primary-fixed": "#002022", "on-primary-fixed-variant": "#004f54", "surface-container-high": "#272a31", "on-secondary-container": "#d7a4ff", "on-tertiary-container": "#7d5800", "error": "#ffb4ab", "surface-variant": "#32353c", "on-tertiary-fixed": "#271900", "secondary-fixed": "#f2daff", "background": "#10131a", "surface-container-low": "#191c22", "tertiary": "#fff4e8", "surface-container-highest": "#32353c", "inverse-on-surface": "#2e3037", "on-surface-variant": "#b9cacb", "on-error": "#690005", "surface-tint": "#00dbe9", "on-tertiary": "#422c00", "primary": "#dbfcff", "surface-container": "#1d2026", "tertiary-fixed": "#ffdea9", "outline": "#849495", "inverse-surface": "#e1e2eb", "on-secondary": "#4c007d", "surface-dim": "#10131a", "on-secondary-fixed": "#2e004e", "error-container": "#93000a", "on-tertiary-fixed-variant": "#5e4100", "surface-bright": "#363940", "inverse-primary": "#006970", "outline-variant": "#3b494b", "surface-container-lowest": "#0b0e14", "on-error-container": "#ffdad6", "on-primary": "#00363a", "primary-fixed": "#7df4ff", "tertiary-container": "#ffd388", "secondary": "#e0b6ff", "secondary-fixed-dim": "#e0b6ff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin": "2rem", "gutter": "1.5rem", "space-lg": "1.5rem", "space-xl": "2.5rem", "margin-mobile": "1rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "space-md": "1rem", "gutter-mobile": "1rem" }, "fontFamily": { "display-hero": [ "Outfit" ], "display-hero-mobile": [ "Outfit" ], "headline-md": [ "Outfit" ], "label-sm": [ "Outfit" ], "headline-xl-mobile": [ "Outfit" ], "headline-xl": [ "Outfit" ], "body-md": [ "Inter" ], "label-lg": [ "Outfit" ], "label-md": [ "Outfit" ], "body-lg": [ "Inter" ], "headline-lg": [ "Outfit" ], "body-sm": [ "Inter" ], "headline-sm": [ "Outfit" ] }, "fontSize": { "display-hero": [ "56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "800" } ], "display-hero-mobile": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "800" } ], "headline-md": [ "22px", { "lineHeight": "30px", "fontWeight": "600" } ], "label-sm": [ "10px", { "lineHeight": "14px", "letterSpacing": "0.1em", "fontWeight": "700" } ], "headline-xl-mobile": [ "28px", { "lineHeight": "36px", "fontWeight": "700" } ], "headline-xl": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "body-md": [ "14px", { "lineHeight": "22px", "fontWeight": "400" } ], "label-lg": [ "14px", { "lineHeight": "18px", "letterSpacing": "0.06em", "fontWeight": "700" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "700" } ], "body-lg": [ "16px", { "lineHeight": "26px", "fontWeight": "400" } ], "headline-lg": [ "28px", { "lineHeight": "36px", "fontWeight": "600" } ], "body-sm": [ "12px", { "lineHeight": "18px", "fontWeight": "400" } ], "headline-sm": [ "18px", { "lineHeight": "26px", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest z-50 flex flex-col pt-space-lg pb-space-lg shadow-[4px_0_24px_rgba(0,0,0,0.5)]"><div class="px-space-lg mb-space-lg flex items-center gap-space-xs"><img alt="APEX VAULT Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WVKZp6i3ngQxF5P1iisxrS3aA7jWDvtwT7fNDm3vSCzAoNXgKz4VuKT88vMq36elrtIrk1lWXRuGC9xNResALgg5IOHhxhzG2CzzlQKB64R41hJV529s-2hV-A84sh-EHqvW-f4rN7N9Q_iABWYD20EG7szYCjY-c3U0ehAyl-rTxFNJ6dF5zR80qs49UI62d9mx4iKVeLOsamOJl2H-_ryY86GJ-yR4Y5PiuiLDliWvejymxR_i5CZr0"/><span class="font-headline-sm text-headline-sm uppercase tracking-wider text-primary">VAULT<span class="text-secondary ml-1">ADMIN</span></span></div><div class="px-space-md mb-space-sm"><span class="font-label-sm text-label-sm uppercase tracking-widest text-outline px-space-sm">Operations</span></div><nav class="flex-1 px-space-sm flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container font-headline-sm font-bold rounded-lg"><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all font-body-md text-body-md" data-path="admin-overview" href="#">ภาพรวมระบบ</a><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all font-body-md text-body-md" data-path="inventory-management" href="#">คลังไอดีเกม</a><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all font-body-md text-body-md" data-path="gacha-odds-engine" href="#">ตู้สุ่ม &amp; อัตราดรอป</a><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all font-body-md text-body-md" data-path="financial-ledger" href="#">การเงิน &amp; ธุรกรรม</a><a aria-current="page" class="px-space-md py-space-sm transition-all bg-primary-container text-on-primary-container font-headline-sm font-bold rounded-lg" data-path="wallet-topup-audit" href="#">ตรวจสอบการเงิน &amp; สลิป</a><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all font-body-md text-body-md" data-path="admin-user-management-ban-console" href="#">สมาชิก &amp; ความปลอดภัย</a><div class="my-space-sm px-space-sm"><span class="font-label-sm text-label-sm uppercase tracking-widest text-outline">User Portal</span></div><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all font-body-md text-body-md" data-path="home" href="#">กลับสู่หน้าร้าน</a><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all font-body-md text-body-md" data-path="user-dashboard" href="#">แดชบอร์ดสมาชิก</a></nav><div class="px-space-md pt-space-sm"><div class="p-space-sm rounded-xl bg-surface-container-low flex items-center justify-between"><div class="flex items-center gap-space-xs"><div class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-headline-sm text-label-sm font-bold">AD</div><div><p class="font-headline-sm text-label-md text-on-surface">Admin Control</p><p class="font-label-sm text-label-sm text-secondary">Superuser</p></div></div><a aria-label="Sign out" class="text-on-surface-variant hover:text-error transition-colors" data-path="login" href="#"><span class="material-symbols-outlined text-[20px]">power_settings_new</span></a></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-20 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_4px_24px_rgba(0,0,0,0.6)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-primary-container text-[20px]">terminal</span><span class="font-headline-sm text-headline-sm text-primary tracking-wide">VAULT COMMAND ENGINE</span></div><div class="flex items-center gap-space-md"><div class="flex items-center bg-surface-container-low rounded-xl px-space-md py-1.5 shadow-[0_0_12px_-2px_rgba(0,240,255,0.2)]"><span class="material-symbols-outlined text-primary-container text-[18px] mr-2">bolt</span><span class="font-label-sm text-label-sm text-on-surface-variant mr-2">STATUS:</span><span class="font-label-sm text-label-sm text-primary-container uppercase font-bold">ONLINE</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-20 w-full px-space-lg py-space-lg min-h-screen bg-surface"><div class="flex flex-col w-full">
+<!-- Top Breadcrumb & Administrative Control Actions Bar -->
+<header class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-space-md mb-space-lg">
+<div class="flex flex-col gap-1">
+<nav class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="hover:text-primary transition-colors cursor-pointer">แผงควบคุมหลัก</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="hover:text-primary transition-colors cursor-pointer">การเงิน &amp; ธุรกรรม</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary font-headline-sm font-semibold">ตรวจสอบสลิป &amp; เติมเงิน (Top-up &amp; Slip Audit)</span>
+</nav>
+<div class="flex items-center gap-space-sm mt-1">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">ระบบตรวจสอบสลิปโอนเงิน &amp; อนุมัติซองของขวัญ</h1>
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high shadow-sm">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-container opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary-container"></span>
+</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary">AI Slip Verifier v4.2</span>
+</div>
+</div>
+</div>
+<!-- Quick Tool Action Buttons -->
+<div class="flex flex-wrap items-center gap-space-xs">
+<button class="flex items-center gap-2 px-space-md py-2.5 rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-bright transition-all shadow-sm font-label-md text-label-md" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary">sync</span>
+<span>สแกนสลิปย้อนหลัง (Re-verify Batch)</span>
+</button>
+<button class="flex items-center gap-2 px-space-md py-2.5 rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-bright transition-all shadow-sm font-label-md text-label-md" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">tune</span>
+<span>ตั้งค่า API &amp; Webhook</span>
+</button>
+<button class="flex items-center gap-2 px-space-md py-2.5 rounded-lg bg-primary-container text-on-primary-container hover:shadow-[0_0_20px_rgba(0,240,255,0.4)] transition-all font-label-md text-label-md" type="button">
+<span class="material-symbols-outlined text-[18px]">file_download</span>
+<span>ส่งออกรายงาน (.CSV/.XLSX)</span>
+</button>
+</div>
+</header>
+<!-- 4 Primary KPI Telemetry Cards -->
+<section class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md mb-space-lg">
+<!-- Card 1: Pending Review (Amber Attention) -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container p-space-md shadow-md flex flex-col justify-between">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-tertiary-fixed-dim/10 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary-fixed-dim">ยอดรอตรวจสอบ (Pending Review)</span>
+<h2 class="font-display-hero-mobile text-display-hero-mobile text-on-surface font-extrabold mt-1">฿18,450.00</h2>
+</div>
+<div class="w-10 h-10 rounded-lg bg-tertiary-fixed-dim/15 flex items-center justify-center text-tertiary-fixed-dim">
+<span class="material-symbols-outlined text-[22px]">hourglass_top</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-space-sm pt-space-xs">
+<span class="font-body-sm text-body-sm text-on-surface-variant">ค้างอยู่ในคิว: <strong class="text-on-surface font-semibold">12 รายการ</strong></span>
+<span class="inline-flex items-center px-2 py-0.5 rounded bg-tertiary-fixed-dim text-on-tertiary-fixed font-label-sm text-label-sm uppercase">ด่วน 3 เคส</span>
+</div>
+</div>
+<!-- Card 2: Approved Today (Safe State) -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container p-space-md shadow-md flex flex-col justify-between">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-primary-container/10 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary">อนุมัติสำเร็จวันนี้ (Approved Today)</span>
+<h2 class="font-display-hero-mobile text-display-hero-mobile text-on-surface font-extrabold mt-1">฿342,890.00</h2>
+</div>
+<div class="w-10 h-10 rounded-lg bg-primary-container/15 flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[22px]">verified</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-space-sm pt-space-xs">
+<span class="font-body-sm text-body-sm text-on-surface-variant">สำเร็จ: <strong class="text-on-surface font-semibold">1,842 รายการ</strong></span>
+<span class="font-label-sm text-label-sm text-primary flex items-center gap-1 font-bold">
+<span class="material-symbols-outlined text-[14px]">bolt</span> Auto 94.2%
+        </span>
+</div>
+</div>
+<!-- Card 3: Fraud & Rejected (Crimson Alert) -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container p-space-md shadow-md flex flex-col justify-between">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-error/10 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-error">สลิปปลอม/ระงับทุจริต (Fraud)</span>
+<h2 class="font-display-hero-mobile text-display-hero-mobile text-on-surface font-extrabold mt-1">฿14,200.00</h2>
+</div>
+<div class="w-10 h-10 rounded-lg bg-error-container text-on-error-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">language_chinese_pinyin</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-space-sm pt-space-xs">
+<span class="font-body-sm text-body-sm text-on-surface-variant">ปฏิเสธ: <strong class="text-error font-semibold">8 รายการ</strong></span>
+<span class="font-label-sm text-label-sm text-error uppercase font-semibold">บล็อก IP &amp; สลิปซ้ำ</span>
+</div>
+</div>
+<!-- Card 4: System Settlement Reserve -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container p-space-md shadow-md flex flex-col justify-between">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-secondary/10 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">ยอดเงินสำรองระบบ (Vault Reserve)</span>
+<h2 class="font-display-hero-mobile text-display-hero-mobile text-on-surface font-extrabold mt-1">฿1,280,450.00</h2>
+</div>
+<div class="w-10 h-10 rounded-lg bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">account_balance</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-space-sm pt-space-xs">
+<span class="font-body-sm text-body-sm text-on-surface-variant">PromptPay Bot: <strong class="text-primary font-semibold">Ready</strong></span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">TrueMoney OK</span>
+</div>
+</div>
+</section>
+<!-- Filter & Rapid Search Hub -->
+<section class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md mb-space-lg p-space-sm bg-surface-container-low rounded-xl shadow-sm">
+<!-- Audit Filter Tabs -->
+<div class="flex flex-wrap items-center gap-1">
+<button class="px-space-md py-2 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-bright transition-colors" type="button">
+        ทั้งหมด <span class="ml-1 text-on-surface-variant font-normal">(1,862)</span>
+</button>
+<button class="px-space-md py-2 rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md font-bold shadow-sm flex items-center gap-1.5" type="button">
+<span>รอดำเนินการ</span>
+<span class="px-1.5 py-0.2 rounded-full bg-on-primary-container text-primary-container text-label-sm font-bold">12</span>
+</button>
+<button class="px-space-md py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-label-md text-label-md transition-colors" type="button">
+        อนุมัติแล้ว <span class="ml-1 text-outline font-normal">(1,842)</span>
+</button>
+<button class="px-space-md py-2 rounded-lg text-on-surface-variant hover:text-error hover:bg-surface-container-high font-label-md text-label-md transition-colors" type="button">
+        ปฏิเสธ/สลิปปลอม <span class="ml-1 text-outline font-normal">(8)</span>
+</button>
+</div>
+<!-- Search and Method Selectors -->
+<div class="flex flex-1 sm:flex-initial flex-wrap items-center gap-space-sm justify-end">
+<!-- Method Chip Filters -->
+<div class="flex items-center gap-1 bg-surface-container-lowest p-1 rounded-lg">
+<button class="px-2.5 py-1 rounded bg-surface-container-high text-primary font-label-sm text-label-sm" type="button">ทุกช่องทาง</button>
+<button class="px-2.5 py-1 rounded text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm" type="button">PromptPay QR</button>
+<button class="px-2.5 py-1 rounded text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm" type="button">ซอง TrueMoney</button>
+</div>
+<!-- Live Search Bar -->
+<div class="relative w-full sm:w-72">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant text-[18px]">search</span>
+<input class="w-full bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-sm text-body-sm pl-9 pr-3 py-2 rounded-lg outline-none focus:bg-surface-container-high transition-colors" placeholder="ค้นหาเลขอ้างอิง, Order ID, UID หรือยอดเงิน..." type="text"/>
+</div>
+</div>
+</section>
+<!-- Two-Column Master Audit Workplace (~60% Queue List / ~40% Deep Slip Inspector) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT COLUMN: Slip & Voucher Queue List (~60% width = col-span-7) -->
+<div class="lg:col-span-7 flex flex-col gap-space-sm">
+<div class="flex items-center justify-between px-space-xs mb-1">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-outline">คิวตรวจสอบเรียลไทม์ (Live Transaction Ingestion)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">กำลังแสดง <strong class="text-on-surface">4 รายการล่าสุด</strong> จาก 12 ค้างทบทวน</span>
+</div>
+<!-- Item 1: Selected / Pending Manual Audit -->
+<div class="group relative rounded-xl bg-surface-container p-space-md shadow-md cursor-pointer transition-all hover:bg-surface-container-high" style="box-shadow: 0 0 24px -2px rgba(0, 240, 255, 0.25);">
+<!-- Active indicator cyan bar -->
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-primary-container rounded-l-xl"></div>
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-sm pl-2">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest text-primary flex items-center justify-center font-headline-sm shrink-0">
+<span class="material-symbols-outlined text-[22px]">qr_code_scanner</span>
+</div>
+<div>
+<div class="flex flex-wrap items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">฿2,500.00</span>
+<span class="px-2 py-0.5 rounded bg-tertiary-fixed-dim/20 text-tertiary-fixed-dim font-label-sm text-label-sm uppercase">PENDING MANUAL AUDIT</span>
+<span class="font-body-sm text-body-sm text-outline">#TOP-88412</span>
+</div>
+<div class="flex items-center gap-2 mt-1 text-on-surface-variant font-body-sm text-body-sm">
+<span class="text-on-surface font-medium">CyberPhantom</span>
+<span class="text-outline">·</span>
+<span class="text-secondary font-label-sm text-label-sm font-semibold">UID #USR-99420 (VIP 3)</span>
+<span class="text-outline">·</span>
+<span>ธ.กสิกรไทย (KBank PromptPay)</span>
+</div>
+</div>
+</div>
+<div class="text-right shrink-0">
+<span class="font-label-sm text-label-sm text-tertiary-fixed-dim font-semibold flex items-center justify-end gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span> 2 นาทีที่แล้ว
+            </span>
+<span class="font-body-sm text-body-sm text-outline">14:32:10 น.</span>
+</div>
+</div>
+<!-- AI Diagnostic Box -->
+<div class="mt-space-sm p-space-sm rounded-lg bg-surface-container-lowest text-tertiary-fixed-dim text-body-sm font-body-sm flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] shrink-0 mt-0.5">warning</span>
+<p class="leading-relaxed">
+<strong>OCR Mismatch Warning:</strong> ชื่อบัญชีต้นทางไม่ตรงกับ KYC สมาชิก (ตรวจพบ "นาย สมชาย พ." vs ข้อมูลสมัคร "ธนาธร ก.") — กรุณาตรวจความถูกต้องก่อนกดปล่อยเครดิต
+          </p>
+</div>
+</div>
+<!-- Item 2: Pending TrueMoney Gift Voucher -->
+<div class="group relative rounded-xl bg-surface-container p-space-md shadow-sm cursor-pointer transition-all hover:bg-surface-container-high">
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-secondary-container text-on-secondary-container flex items-center justify-center font-headline-sm shrink-0">
+<span class="material-symbols-outlined text-[22px]">redeem</span>
+</div>
+<div>
+<div class="flex flex-wrap items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">฿500.00</span>
+<span class="px-2 py-0.5 rounded bg-secondary-container/40 text-secondary font-label-sm text-label-sm uppercase">ซองของขวัญ TRUEMONEY</span>
+<span class="font-body-sm text-body-sm text-outline">#TOP-88410</span>
+</div>
+<div class="flex items-center gap-2 mt-1 text-on-surface-variant font-body-sm text-body-sm">
+<span class="text-on-surface font-medium">NightStalker99</span>
+<span class="text-outline">·</span>
+<span class="text-outline font-label-sm text-label-sm">UID #USR-44120 (VIP 1)</span>
+<span class="text-outline">·</span>
+<span>Angpao Voucher Link</span>
+</div>
+</div>
+</div>
+<div class="text-right shrink-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center justify-end gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span> 6 นาทีที่แล้ว
+            </span>
+<span class="font-body-sm text-body-sm text-outline">14:28:44 น.</span>
+</div>
+</div>
+<!-- AI Diagnostic Box -->
+<div class="mt-space-sm p-space-sm rounded-lg bg-surface-container-lowest text-primary text-body-sm font-body-sm flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] shrink-0 mt-0.5">check_circle</span>
+<p class="leading-relaxed">
+<strong>Voucher Ingestion:</strong> บอทดูดซองสำเร็จ ยอดเข้าบัญชีกลางแล้ว ฿500.00 คงเหลือสิทธิ์ 1/1 ซอง พร้อมกดอนุมัติ
+          </p>
+</div>
+</div>
+<!-- Item 3: Rejected & Fraud Blacklisted -->
+<div class="group relative rounded-xl bg-surface-container p-space-md shadow-sm cursor-pointer transition-all hover:bg-surface-container-high opacity-90">
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-error-container text-on-error-container flex items-center justify-center font-headline-sm shrink-0">
+<span class="material-symbols-outlined text-[22px]">block</span>
+</div>
+<div>
+<div class="flex flex-wrap items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold line-through">฿1,200.00</span>
+<span class="px-2 py-0.5 rounded bg-error-container text-on-error-container font-label-sm text-label-sm uppercase font-bold">REJECTED &amp; BLACKLISTED</span>
+<span class="font-body-sm text-body-sm text-outline">#TOP-88395</span>
+</div>
+<div class="flex items-center gap-2 mt-1 text-on-surface-variant font-body-sm text-body-sm">
+<span class="text-error font-medium">FastMoney_Bot</span>
+<span class="text-outline">·</span>
+<span class="text-outline font-label-sm text-label-sm">UID #USR-77301</span>
+<span class="text-outline">·</span>
+<span>SCB Easy PromptPay</span>
+</div>
+</div>
+</div>
+<div class="text-right shrink-0">
+<span class="font-label-sm text-label-sm text-error flex items-center justify-end gap-1">
+<span class="material-symbols-outlined text-[14px]">report</span> 18 นาทีที่แล้ว
+            </span>
+<span class="font-body-sm text-body-sm text-outline">14:16:02 น.</span>
+</div>
+</div>
+<!-- AI Diagnostic Box -->
+<div class="mt-space-sm p-space-sm rounded-lg bg-surface-container-lowest text-error text-body-sm font-body-sm flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] shrink-0 mt-0.5">security_update_warning</span>
+<p class="leading-relaxed">
+<strong>DUPLICATE SLIP DETECTED:</strong> รหัสอ้างอิง 202409280194821 เคยใช้เติมไปแล้วเมื่อ 24 ก.ย. บล็อก IP ถาวร (Fraud Score: 99/100)
+          </p>
+</div>
+</div>
+<!-- Item 4: Approved - Auto Verification -->
+<div class="group relative rounded-xl bg-surface-container p-space-md shadow-sm cursor-pointer transition-all hover:bg-surface-container-high opacity-85">
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-primary flex items-center justify-center font-headline-sm shrink-0">
+<span class="material-symbols-outlined text-[22px]">check_box</span>
+</div>
+<div>
+<div class="flex flex-wrap items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">฿4,200.00</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-label-sm uppercase font-bold">AUTO APPROVED</span>
+<span class="font-body-sm text-body-sm text-outline">#TOP-88390</span>
+</div>
+<div class="flex items-center gap-2 mt-1 text-on-surface-variant font-body-sm text-body-sm">
+<span class="text-on-surface font-medium">ValkyrieQueen</span>
+<span class="text-outline">·</span>
+<span class="text-outline font-label-sm text-label-sm">UID #USR-65412 (VIP 2)</span>
+<span class="text-outline">·</span>
+<span>PromptPay QR (SCB)</span>
+</div>
+</div>
+</div>
+<div class="text-right shrink-0">
+<span class="font-label-sm text-label-sm text-primary flex items-center justify-end gap-1">
+<span class="material-symbols-outlined text-[14px]">done_all</span> 25 นาทีที่แล้ว
+            </span>
+<span class="font-body-sm text-body-sm text-outline">14:09:12 น.</span>
+</div>
+</div>
+<!-- AI Diagnostic Box -->
+<div class="mt-space-sm p-space-sm rounded-lg bg-surface-container-lowest text-on-surface-variant text-body-sm font-body-sm flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary shrink-0 mt-0.5">verified_user</span>
+<p class="leading-relaxed">
+            SlipOK API Verified (TransRef: 2024092809183491) เครดิตปรับปรุงเข้าวอลเล็ตเรียบร้อยแล้ว
+          </p>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Deep Slip Inspector & Decision Drawer (~40% width = col-span-5) -->
+<div class="lg:col-span-5 flex flex-col gap-space-md sticky top-24">
+<!-- Panel Header & Order Context -->
+<div class="rounded-xl bg-surface-container p-space-md shadow-xl">
+<div class="flex items-center justify-between pb-space-sm border-b-0">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">document_scanner</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">การตรวจสอบสลิปเจาะลึก (Deep Inspector)</h3>
+</div>
+<span class="font-label-sm text-label-sm text-primary bg-primary-container/10 px-2 py-0.5 rounded font-mono">ID: #TOP-88412</span>
+</div>
+<!-- Bank Slip Visual Preview Box (High-fidelity simulated Thai Bank Transfer) -->
+<div class="relative mt-space-md rounded-xl bg-surface-container-lowest p-space-md overflow-hidden">
+<!-- Ambient OCR Scan Grid Overlay -->
+<div class="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-primary/5 pointer-events-none"></div>
+<!-- Thai Bank Slip Top Bar -->
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-[#138f2d] flex items-center justify-center text-white font-headline-sm text-label-md font-extrabold shadow-sm">
+                K+
+              </div>
+<div>
+<p class="font-headline-sm text-label-md text-on-surface font-bold leading-tight">โอนเงินสำเร็จ (Transfer Successful)</p>
+<p class="font-body-sm text-[11px] text-outline">24 ต.ค. 2567 · 14:31:02 น.</p>
+</div>
+</div>
+<div class="px-2 py-1 rounded bg-surface-container-high text-primary font-label-sm text-label-sm flex items-center gap-1 font-mono">
+<span class="material-symbols-outlined text-[14px]">format_image_left</span> OCR 88.5%
+            </div>
+</div>
+<!-- Scanline & OCR Bounding Boxes Simulation -->
+<div class="mt-space-sm flex flex-col gap-2 relative">
+<!-- Transfer Amount Highlight Box -->
+<div class="p-2.5 rounded-lg bg-surface-container-high/80 relative">
+<span class="absolute top-1 right-2 text-[10px] text-primary uppercase font-label-sm font-bold">MATCH 100%</span>
+<p class="font-body-sm text-[11px] text-on-surface-variant">จำนวนเงิน (Amount):</p>
+<p class="font-display-hero-mobile text-headline-lg text-primary font-extrabold tracking-tight">฿2,500.00</p>
+</div>
+<!-- Receiver Match Box -->
+<div class="p-2.5 rounded-lg bg-surface-container-high/50 flex flex-col gap-1">
+<div class="flex justify-between items-center">
+<span class="font-body-sm text-[11px] text-outline">ไปยังบัญชีผู้รับ (To):</span>
+<span class="text-primary font-label-sm text-label-sm flex items-center gap-1 font-bold">
+<span class="material-symbols-outlined text-[13px]">check</span> ตรงกับบัญชีบริษัท
+                </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface font-semibold">บจก. เอเปกซ์ วอลท์ ดิจิทัล (APEX VAULT CO., LTD.)</p>
+<p class="font-body-sm text-[11px] text-outline font-mono">PromptPay ID: 0-1055-66099-21-4</p>
+</div>
+<!-- Sender Mismatch Warning Box (The reason for manual audit) -->
+<div class="p-2.5 rounded-lg bg-tertiary-fixed-dim/10 relative">
+<div class="flex justify-between items-center">
+<span class="font-body-sm text-[11px] text-tertiary-fixed-dim font-bold">จากบัญชีผู้โอน (From):</span>
+<span class="text-tertiary-fixed-dim font-label-sm text-label-sm uppercase font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">warning</span> ชื่อไม่ตรงกับ KYC
+                </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface font-semibold">นาย สมชาย พงษ์ไพศาล</p>
+<p class="font-body-sm text-[11px] text-outline font-mono">KBank เลขบัญชี: xxx-x-x8921-x</p>
+</div>
+<!-- Trans Ref Validation -->
+<div class="flex items-center justify-between p-2 rounded bg-surface-container-lowest text-body-sm">
+<span class="text-outline text-body-sm">รหัสอ้างอิง (Trans Ref):</span>
+<span class="font-mono text-on-surface font-semibold text-body-sm">20241024KBANK998231</span>
+</div>
+<div class="flex items-center justify-between text-body-sm px-1 text-primary">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">database</span> ตรวจสอบสลิปซ้ำ (Duplicate Check):
+              </span>
+<span class="font-bold">0 ซ้ำ (ใช้งานครั้งแรก)</span>
+</div>
+</div>
+</div>
+<!-- Quick User Audit Profile -->
+<div class="mt-space-md p-space-sm rounded-xl bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-headline-sm text-label-sm font-bold">
+                CP
+              </div>
+<div>
+<p class="font-headline-sm text-label-md text-on-surface font-bold">CyberPhantom</p>
+<p class="font-label-sm text-[11px] text-outline">UID: #USR-99420 · สมัครสมาชิกเมื่อ 6 เดือนที่แล้ว</p>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-secondary font-label-sm text-label-sm font-bold">VIP 3</span>
+</div>
+<div class="grid grid-cols-2 gap-2 mt-1">
+<div class="bg-surface-container-lowest p-2 rounded-lg">
+<span class="font-body-sm text-[11px] text-outline">ยอดเงินในวอลเล็ตปัจจุบัน</span>
+<p class="font-headline-sm text-body-lg text-primary font-bold">฿1,594.50</p>
+</div>
+<div class="bg-surface-container-lowest p-2 rounded-lg">
+<span class="font-body-sm text-[11px] text-outline">สถิติเติมเงินสำเร็จ</span>
+<p class="font-headline-sm text-body-lg text-on-surface font-bold">28 ครั้ง <span class="text-primary text-[11px] font-normal">(100% ปกติ)</span></p>
+</div>
+</div>
+<div class="mt-1 p-2 rounded-lg bg-surface-container-lowest text-body-sm text-on-surface-variant flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[16px] shrink-0 mt-0.5">chat</span>
+<p class="text-[12px] leading-tight">
+<strong>บันทึกแชทล่าสุด:</strong> สมาชิกแจ้งว่า "โอนเงินจากบัญชีแฟน (สมชาย พ.) ยอด 2,500 บาท รบกวนช่วยกดยืนยันให้ด้วยครับ"
+            </p>
+</div>
+</div>
+<!-- Quick Admin Preset Tags -->
+<div class="mt-space-sm">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-outline block mb-1">แท็กเหตุผลการพิจารณา (Quick Audit Tags):</label>
+<div class="flex flex-wrap gap-1.5">
+<button class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface-variant hover:text-primary hover:bg-surface-bright font-label-sm text-label-sm transition-colors" type="button">
+              + ชื่อบัญชีไม่ตรง (ยืนยันแล้ว)
+            </button>
+<button class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface-variant hover:text-error hover:bg-surface-bright font-label-sm text-label-sm transition-colors" type="button">
+              + สลิปซ้ำ
+            </button>
+<button class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface-variant hover:text-error hover:bg-surface-bright font-label-sm text-label-sm transition-colors" type="button">
+              + ยอดเงินไม่ครบ
+            </button>
+<button class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface-variant hover:text-outline font-label-sm text-label-sm transition-colors" type="button">
+              + โอนผิดบัญชี
+            </button>
+</div>
+</div>
+<!-- Audit Admin Note -->
+<div class="mt-space-sm">
+<textarea class="w-full bg-surface-container-lowest text-on-surface placeholder:text-outline text-body-sm font-body-sm p-2.5 rounded-lg outline-none focus:bg-surface-container-high transition-colors resize-none" placeholder="พิมพ์หมายเหตุเพิ่มเติมสำหรับผู้ใช้ หรือบันทึกลง System Audit Log..." rows="2"></textarea>
+</div>
+<!-- Decision & Action Buttons -->
+<div class="flex flex-col gap-2 mt-space-md">
+<!-- Primary Approve Button -->
+<button class="w-full py-3 rounded-lg bg-primary-container text-on-primary-container font-headline-sm text-headline-sm font-bold flex items-center justify-center gap-2 hover:shadow-[0_0_24px_rgba(0,240,255,0.4)] transition-all" type="button">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+<span>อนุมัติเครดิตทันที (+฿2,500.00 เข้า Wallet)</span>
+</button>
+<!-- Secondary Operational Actions -->
+<div class="grid grid-cols-2 gap-2">
+<button class="py-2.5 rounded-lg bg-surface-container-high text-tertiary-fixed-dim hover:bg-surface-bright font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">contact_support</span>
+<span>ขอเอกสารเพิ่มเติม</span>
+</button>
+<button class="py-2.5 rounded-lg bg-surface-container-high text-error hover:bg-surface-bright font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">cancel</span>
+<span>ปฏิเสธสลิป</span>
+</button>
+</div>
+<!-- Strict Fraud Ban Action -->
+<button class="w-full py-2 rounded-lg bg-error-container text-on-error-container hover:opacity-95 font-label-sm text-label-sm uppercase font-bold flex items-center justify-center gap-1.5 transition-all" type="button">
+<span class="material-symbols-outlined text-[16px]">gavel</span>
+<span>ระงับบัญชี &amp; เพิ่มบัญชีดำ (Fraud Blacklist)</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- TrueMoney Voucher Live Ingestion Stream Sub-Panel -->
+<section class="mt-space-xl p-space-md rounded-xl bg-surface-container-low shadow-sm">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm pb-space-sm border-b-0">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">redeem</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">TrueMoney Voucher Live Ingestion Stream</h4>
+<p class="font-body-sm text-[12px] text-outline">ระบบดูดซองของขวัญอัตโนมัติผ่าน TrueMoney Gateway Webhook</p>
+</div>
+</div>
+<!-- Real-time Bot Telemetry Badges -->
+<div class="flex items-center gap-space-sm">
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-high font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="text-on-surface-variant">Bot Worker #1:</span>
+<span class="text-primary font-bold">Active</span>
+</div>
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-high font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="text-on-surface-variant">Bot Worker #2:</span>
+<span class="text-primary font-bold">Active</span>
+</div>
+<div class="flex items-center gap-1 px-2.5 py-1 rounded bg-surface-container-high font-label-sm text-label-sm text-outline">
+<span>In Queue:</span>
+<span class="text-on-surface font-bold">0</span>
+</div>
+</div>
+</div>
+<!-- Live Stream Table / Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm mt-space-sm">
+<!-- Stream Log 1 -->
+<div class="p-space-sm rounded-lg bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+<div>
+<p class="font-headline-sm text-body-sm text-on-surface font-semibold">฿300.00 เคลมสำเร็จ</p>
+<p class="font-body-sm text-[11px] text-outline font-mono">v.truemoney.com/campaign/?v=8812... · UID #1109</p>
+</div>
+</div>
+<span class="font-label-sm text-[11px] text-outline">43s ago</span>
+</div>
+<!-- Stream Log 2 -->
+<div class="p-space-sm rounded-lg bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+<div>
+<p class="font-headline-sm text-body-sm text-on-surface font-semibold">฿1,000.00 เคลมสำเร็จ</p>
+<p class="font-body-sm text-[11px] text-outline font-mono">v.truemoney.com/campaign/?v=4991... · UID #4088</p>
+</div>
+</div>
+<span class="font-label-sm text-[11px] text-outline">2m ago</span>
+</div>
+<!-- Stream Log 3 -->
+<div class="p-space-sm rounded-lg bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[18px]">replay</span>
+<div>
+<p class="font-headline-sm text-body-sm text-on-surface font-semibold">฿50.00 ซองหมดอายุ/สิทธิ์เต็ม</p>
+<p class="font-body-sm text-[11px] text-outline font-mono">v.truemoney.com/campaign/?v=3301... · แจ้งผู้ใช้แล้ว</p>
+</div>
+</div>
+<span class="font-label-sm text-[11px] text-outline">5m ago</span>
+</div>
+</div>
+</section>
+</div></main></div></body></html>

@@ -1,0 +1,7 @@
+{
+  "project": "APEX VAULT",
+  "action": "merged additional Stitch source package",
+  "source_archive": "stitch_apex_vault_gaming_marketplace(1).zip",
+  "included_under": "stitch-source-2/",
+  "nested_zip_files_removed": []
+}

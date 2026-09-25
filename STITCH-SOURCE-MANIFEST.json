@@ -1,0 +1,7 @@
+{
+  "project": "APEX VAULT Web Starter",
+  "base": "GitHub + Vercel + Supabase production starter",
+  "added": "Uploaded Stitch APEX VAULT Gaming Marketplace source package",
+  "stitch_source_path": "stitch-source/",
+  "note": "Stitch source is preserved separately so the production React/Supabase app remains deployable."
+}
